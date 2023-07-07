@@ -1,0 +1,153 @@
+/* reset */
+*{margin:0; padding: 0; box-sizing: border-box; font-family: sans-serif}
+
+/* header */
+.menu{
+    width: 100%;
+    height: 100px;
+    background-color: #DC2C2C;
+}
+
+.logo{
+    margin: 10px 10px;
+}
+
+
+/* main */
+
+main{
+    background-color: #F0EFEF;
+    height: 100vh;
+    width: 100%;
+    padding-top: 50px;
+}
+
+h1{
+    font-size: 2em;
+    margin: 40px;
+}
+
+.formulario{
+    background-color: #FFFF;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px ;
+    /* align-items: center; */
+    
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.body-conteudo{
+    background-color: #F0EFEF;
+    width: 100%;
+    height: 100%;
+}
+
+.input{
+    padding: 5px 5px;
+    width: 300px;
+    height: 50px;
+    border-radius: 6px;
+    border: solid 1px;
+    font-size: 1em;
+    margin: 10px;
+}
+
+.arquivo{
+    padding: 100px;
+    background-color: #F0EFEF;
+
+}
+
+.input{
+    padding: 5px 5px;
+    width: 300px;
+    height: 50px;
+    border-radius: 6px;
+    border: solid 1px;
+    font-size: 1em;
+    margin: 10px;
+}
+
+/* alinhando inputs */
+.formula:nth-child(1){
+    background-color: black;
+    
+}
+
+.input-file{
+    display: flex;
+    justify-content: end;
+    z-index: 0;
+}
+
+.input-nome{
+    display: flex;
+    z-index: 0;
+}
+ 
+.input-descricao{
+    margin-top: 150px;
+}
+.descricao{
+    margin-top: 40px;
+    padding-right: 140px;
+    padding-bottom:150px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 1em;
+    overflow-wrap: break-word;
+    
+}
+
+.parte-1{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.parte-3{
+    display: flex;
+}
+
+.input-file-custom{
+    display: none;
+}
+
+.arquivo{
+    
+    padding: 100px 10px;
+    Background-color: #F0EFEF;
+    border-radius: 6px;
+    border:solid 1px;
+    margin-left: 0;
+    display: inline-block;
+    cursor: pointer;
+    width: 230px;
+    text-align: center;
+    
+    
+}
+
+.input-botao{
+    display: flex;
+    justify-content: end;
+}
+
+.botao{
+    background-color: #DC2C2C;
+    padding: 20px 30px;
+    color: #FFF;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-top: 20px;
+}

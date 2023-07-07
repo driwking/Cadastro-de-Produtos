@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Jacintho's</title>
+    <meta name="author" content="andriw aparecido">
+    <meta name="keywords" content="cadastro, pizza">
+    <meta name="descrition" content="pagina para cadastro de pizzas">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<header>
+    
+    <div class="menu">
+    <a href="" class="logo"></a>
+    </div>
+
+</header>
+
+<main>
+
+    <section class="body-conteudo">
+
+        <section class="formulario">
+
+            <h1>CADASTRO DE PIZZAS</h1>
+
+            <form action="/php/Cadastro-de-Produtos/php-action/post.php" class="formula" method="POST">
+                <div class="parte-1">
+
+                    <div class="input-file">
+                        <input type="file" class="input-file-custom" id="input-file">
+                        <label for="input-file" class="arquivo">inserir imagem</label>
+                    </div>
+                    
+                    <div class="parte-2">
+                        <div class="form input-nome" >
+                            <label> Nome </label>
+                            <input type="text" class="input" name="nome">
+                        </div>
+                        
+                        <div class="form input-categoria">
+                            <label>Categoria </label>
+                            <input type="text"class="input" name="categoria">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="parte-3">
+                    <div class="form">
+                        <label>Valor de venda</label>
+                        <input type="number"class="input" name="venda">
+                    </div>
+                    <div class="form">
+                        <label>Valor de custo</label>
+                        <input type="number"class="input" name="custo">
+                    </div>
+                </div>
+
+                    <div class="form input-descricao" >
+                        <label>Descrição</label>
+                        <input type="text" class="descricao" placeholder="text" cols="1" rows="1" name="descricao">
+
+                    </div>
+                    <input type="text" name="teste">
+                <div class="input-botao">
+                <button name="btn-enviar" type="submit" class="botao"> Enviar</button>
+                </div>
+
+            </form>
+            
+
+        </section>
+
+
+    </section>
+
+</main>
+
+</body>
+</html>
