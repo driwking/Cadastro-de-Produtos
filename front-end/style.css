@@ -17,7 +17,7 @@
 
 main{
     background-color: #F0EFEF;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     padding-top: 50px;
 }
@@ -25,6 +25,9 @@ main{
 h1{
     font-size: 2em;
     margin: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 100px;
 }
 
 .formulario{
@@ -34,7 +37,7 @@ h1{
     margin: auto;
     display: flex;
     flex-direction: column;
-    padding: 10px 30px ;
+    padding: 10px 40px ;
     /* align-items: center; */
     
     
@@ -52,8 +55,8 @@ h1{
 }
 
 .input{
-    padding: 5px 5px;
-    width: 300px;
+    /* padding: 5px 5px; */
+    /* width: 300px; */
     height: 50px;
     border-radius: 6px;
     border: solid 1px;
@@ -90,49 +93,77 @@ h1{
 }
 
 .input-nome{
-    display: flex;
-    z-index: 0;
+   padding-left: 10px;
+   text-align: justify;
+   width: 500px;
+}
+
+.input-valor{
+    
+    width: 150px;
+    margin-right: 60px;
+    text-align: center;
 }
  
 .input-descricao{
-    margin-top: 150px;
+    margin-top: 120px;
+
+    font-weight: bold;
+    width: auto;
 }
+
+
+
 .descricao{
     margin-top: 40px;
     padding-right: 140px;
-    padding-bottom:150px;
+    padding-bottom:250px;
     padding-left: 10px;
-    padding-top: 10px;
+    padding-top: 10px;  
     font-size: 1em;
     overflow-wrap: break-word;
+    /* margin-top: 10px; */
     
 }
 
 .parte-1{
     display: flex;
     flex-direction: row-reverse;
+    font-weight: bold;
     justify-content: space-between;
+    
+}
+
+.parte-2{
+    
 }
 
 .parte-3{
     display: flex;
+    font-weight: bold;
+    margin-top: -80px;
 }
 
 .input-file-custom{
     display: none;
 }
+.input-categoria{
+    margin-top: 50px;
+}
 
 .arquivo{
     
-    padding: 100px 10px;
-    Background-color: #F0EFEF;
+    padding: 180px 0;
+    Background-color: #faf7f7b4;
     border-radius: 6px;
     border:solid 1px;
     margin-left: 0;
     display: inline-block;
     cursor: pointer;
-    width: 230px;
+    width: 380px;
+    height: 100px;
     text-align: center;
+    
     
     
 }
