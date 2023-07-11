@@ -61,12 +61,16 @@
                     <div class="parte-2">
                         <div class="form input-div" >
                             <label> Nome </label>
-                            <input type="text" class="input input-nome" name="nome" placeholder="4 queijos">
+                            <input type="text" class="input input-nome" name="nome" required placeholder="4 queijos" autocomplete="off">
                         </div>
                         
                         <div class="form input-categoria">
-                            <label>Categoria </label>
-                            <input type="text"class="input input-nome" name="categoria" placeholder="Pizza salgada tradicional">
+                            <label>Categoria</label>
+                            <select class="input input-nome" required name="categoria">
+                                <option value="---">-</option>
+                                <option class="input input-nome" value="salgada">salgada</option>
+                                <option class="input input-nome" value="doce">doce</option>
+                            </select> 
                         </div>
 
                     </div>
@@ -75,17 +79,17 @@
                 <div class="parte-3">
                     <div class="form">
                         <label>Valor de venda</label>
-                        <span class="cifrao">R$</span><input type="number"class=" input input-valor" name="venda" step=".a01" placeholder="100.00">
+                        <span class="cifrao">R$</span><input type="number"class=" input input-valor" name="venda" step=".01" required placeholder="100.00">
                     </div>
                     <div class="form">
                         <label>Valor de custo</label>
-                        <span class="cifrao">R$</span><input type="number"class="input input-valor" name="custo" step=".01" placeholder="100.00">
+                        <span class="cifrao">R$</span><input type="number"class="input input-valor" name="custo" step=".01" required placeholder="100.00">
                     </div>
                 </div>
 
                     <div class="form input-descricao" >
                         <label>Descrição</label>
-                        <textarea type="text" class="descricao" placeholder="text" cols="1" rows="1" name="descricao"></textarea>
+                        <textarea type="text" class="descricao" required placeholder="text" cols="1" rows="1" name="descricao"></textarea>
 
                     </div>
                     

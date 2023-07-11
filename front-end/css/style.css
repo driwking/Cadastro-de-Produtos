@@ -25,7 +25,7 @@ main{
 
 h1{
     font-size: 2em;
-    margin: 40px;
+    margin: 20px 40px;
     text-align: center;
     font-weight: bold;
     margin-bottom: 100px;
@@ -56,7 +56,7 @@ h1{
 .input{
     height: 50px;
     border-radius: 6px;
-    border: solid 1px;
+    border:#c7bcbc 1px solid;
     font-size: 1em;
     margin: 10px;
 }
@@ -72,17 +72,12 @@ h1{
     width: 300px;
     height: 50px;
     border-radius: 6px;
-    border: solid 1px;
+    border:#c7bcbc 1px solid;
     font-size: 1em;
     margin: 10px;
 }
 
 /* alinhando inputs */
-
-.formula:nth-child(1){
-    background-color: black;
-    
-}
 
 .input-file{
     display: flex;
@@ -107,9 +102,7 @@ h1{
     -webkit-appearance: none;
 }
  
-.parte-3 > div {
-    position: relative;
-}
+
 
 .cifrao{
     position: absolute;
@@ -120,8 +113,7 @@ h1{
 }
 
 .input-descricao{
-    margin-top: 120px;
-
+    margin-top: 50px;
     font-weight: bold;
     width: auto;
 }
@@ -134,17 +126,22 @@ h1{
     padding-bottom:250px;
     padding-left: 10px;
     padding-top: 10px;  
-    font-size: 1em;
+    font-size: 1.2em;
     overflow-wrap: break-word;
     resize: none;
+    border:#c7bcbc 1px solid;
+    border-radius: 6px;
     
 }
+
+
 
 .parte-1{
     display: flex;
     flex-direction: row-reverse;
     font-weight: bold;
     justify-content: space-between;
+    
     
 }
 
@@ -154,6 +151,9 @@ h1{
     margin-top: -80px;
 }
 
+.parte-3 > div {
+    position: relative;
+}
 .input-file-custom{
     display: none;
 }
@@ -166,7 +166,7 @@ h1{
     padding: 180px 0;
     Background-color: #faf7f7b4;
     border-radius: 6px;
-    border:solid 1px;
+    border:#c7bcbc 1px solid;
     margin-left: 0;
     display: inline-block;
     cursor: pointer;
@@ -185,7 +185,7 @@ h1{
     background-color: #DC2C2C;
     padding: 20px 30px;
     color: #FFF;
-    border: none;
+    border:#c7bcbc 1px solid;
     border-radius: 6px;
     font-size: 1em;
     margin-top: 20px;
