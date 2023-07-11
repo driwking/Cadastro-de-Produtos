@@ -5,6 +5,8 @@ require_once 'C:\xampp\htdocs\php\Cadastro-de-Produtos\php-action\connect.db.php
 require_once 'C:\xampp\htdocs\php\Cadastro-de-Produtos\php-action\clear.php';
 
 
+
+
 function Cadastro($sql){
 
     global $connect;
@@ -19,7 +21,7 @@ function Cadastro($sql){
 function verificacao(){
 
     global $nome,$categoria, $connect;
-    $sql = "SELECT * FROM `pizzas` WHERE `nome` = '$nome';
+    $sql = "SELECT * FROM `pizzas` WHERE `nome` = '$nome'";
     $query = mysqli_query($connect, $sql);
 
     if(mysqli_num_rows($query)>0){
@@ -32,23 +34,25 @@ function verificacao(){
 
 if(Isset($_POST['btn-enviar'])){
 
-    // $imagem = clear($_POST['imgaem']);
     $nome = clear($_POST['nome']);
     $categoria = clear($_POST['categoria']);
     $venda = floatval(clear($_POST['venda']));
     $custo = clear($_POST['custo']);
     $descricao = clear($_POST['descricao']);
+    require_once 'Fpermitidos.php';
     print_r($_POST);    
-    
 
     // Cadastro 
     if(verificacao() == true){
         echo "produto já cadastrado";
     }else{
-        $sql = "INSERT INTO `pizzas`(`nome`, `categoria`, `venda`, `custo`, `descricao`) VALUES ('$nome','$categoria',$venda,$custo,'$descricao')";
+        $sql = "INSERT INTO `pizzas`(`nome`, `categoria`, `venda`, `custo`, `descricao`,`imagem`) VALUES ('$nome','$categoria',$venda,$custo,'$descricao','$img')";
         Cadastro($sql);
         echo "cadastrado";
     }
+
+
+    
     
 
     
