@@ -32,14 +32,18 @@ function verificacao(){
 
 }
 
-if(Isset($_POST['btn-enviar'])){
+if(Isset($_POST['btn-enviar']) && !empty($_POST['nome']) && !empty($_POST['categoria']) && !empty($_POST['venda']) && !empty($_POST['custo']) && !empty($_POST['descricao']) ){
 
     $nome = clear($_POST['nome']);
     $categoria = clear($_POST['categoria']);
     $venda = floatval(clear($_POST['venda']));
     $custo = clear($_POST['custo']);
     $descricao = clear($_POST['descricao']);
-    require_once 'Fpermitidos.php';
+    
+    if($_FILES['size'] != 0){
+        require_once 'Fpermitidos.php';
+    }
+
     print_r($_POST);    
 
     // Cadastro 
@@ -51,13 +55,15 @@ if(Isset($_POST['btn-enviar'])){
         echo "cadastrado";
     }
 
+    unlink('arquivos/'.$arquivoFinal);
 
-    
-    
-
-    
+    header('location: \php\Cadastro-de-Produtos\front-end\exibicao.html');
+        
+}else{
+    header('location: \php\Cadastro-de-Produtos\front-end\cadastro.html');
 }
 
 
 
 ?>
+
