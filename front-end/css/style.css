@@ -27,7 +27,7 @@ h1{
     font-size: 2em;
     margin: 20px 40px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 100px;
     letter-spacing: 2px;
 }
@@ -56,14 +56,14 @@ h1{
 .input{
     height: 50px;
     border-radius: 6px;
-    border:#c7bcbc 1px solid;
+    border:#c7bcbc 1px solid;   
     font-size: 1em;
     margin: 10px;
 }
 
 .arquivo{
     padding: 100px;
-    background-color: #F0EFEF;
+    /* background-color: #F0EFEF;   */
 
 }
 
@@ -164,7 +164,6 @@ h1{
 .arquivo{
     
     padding: 180px 0;
-    Background-color: #faf7f7b4;
     border-radius: 6px;
     border:#c7bcbc 1px solid;
     margin-left: 0;
@@ -194,4 +193,14 @@ h1{
 .botao:hover{
     cursor: pointer;
     background: #e72929cb;
+}
+
+
+.foto_img{
+
+    width: 100%;
+    height: 360px;
+    margin-top: -181px;
+    border-radius: 6px;
+
 }
