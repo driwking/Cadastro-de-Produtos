@@ -2,6 +2,8 @@
 require_once 'connect.db.php';
 require_once 'post.php';
 
+// print_r($_FILES['size']);
+// if($_FILES['size'] != 0){   
 
 $extensao = pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
 $arquivoFinal = $nome.'.'.(formatos($extensao));
@@ -29,8 +31,11 @@ $img = img($arquivoAberto,$tamanho);
         global $connect;
         $img = addslashes(fread($arquivoAberto,$tamanho));
         return $img;
-
     }
+    
 
+// }else{
+//     return $img = NULL;
+// }
 
 ?>

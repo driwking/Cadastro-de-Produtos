@@ -5,8 +5,6 @@ require_once 'C:\xampp\htdocs\php\Cadastro-de-Produtos\php-action\connect.db.php
 require_once 'C:\xampp\htdocs\php\Cadastro-de-Produtos\php-action\clear.php';
 
 
-
-
 function Cadastro($sql){
 
     global $connect;
@@ -39,13 +37,11 @@ if(Isset($_POST['btn-enviar']) && !empty($_POST['nome']) && !empty($_POST['categ
     $venda = floatval(clear($_POST['venda']));
     $custo = clear($_POST['custo']);
     $descricao = clear($_POST['descricao']);
+    require_once 'Fpermitidos.php';
     
-    if($_FILES['size'] != 0){
-        require_once 'Fpermitidos.php';
-    }
 
     print_r($_POST);    
-
+    
     // Cadastro 
     if(verificacao() == true){
         echo "produto já cadastrado";
@@ -55,9 +51,11 @@ if(Isset($_POST['btn-enviar']) && !empty($_POST['nome']) && !empty($_POST['categ
         echo "cadastrado";
     }
 
-    unlink('arquivos/'.$arquivoFinal);
+    
+        unlink('arquivos/'.$arquivoFinal);
+    
 
-    header('location: \php\Cadastro-de-Produtos\front-end\exibicao.html');
+    header('location: \php\Cadastro-de-Produtos\front-end\exibicao.php');
         
 }else{
     header('location: \php\Cadastro-de-Produtos\front-end\cadastro.html');
