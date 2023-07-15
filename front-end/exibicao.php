@@ -65,17 +65,17 @@
                     ?>
                 <div class="card">
                     <div class="sub-card"><?php echo '<img class="img" src="data:image/png;base64,' . base64_encode($dados['imagem']) . '" alt=""/>'?><div class="descricao"><span class="span"><?php
-                         echo $dados['descricao'].'<br>';?>
+                         echo $dados['descricao']?>
                     </span></div>
                     </div>
                 </div>
-            <!-- </div> -->
+            
                 <?php
-                endwhile;
+                    endwhile;
                 } 
 
-                ?>
-
+                ?> 
+            </div>
              <!-- <div class="card-pai">
             <div class="card">
                 <div class="sub-card"><img class="img" src="../front-end/imagens/frango.jpg" alt=""><div class="descricao"></div><span class="span">CHOCOLATE
