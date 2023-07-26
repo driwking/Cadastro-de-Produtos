@@ -55,10 +55,10 @@ if(Isset($_POST['btn-enviar']) && !empty($_POST['nome']) && !empty($_POST['categ
         unlink('arquivos/'.$arquivoFinal);
     
 
-    header('location: \php\Cadastro-de-Produtos\front-end\exibicao.php');
+    header('location: /php/Cadastro-de-Produtos/front-end/pagina-cadastro-produto/cadastro.html');
         
 }else{
-    header('location: \php\Cadastro-de-Produtos\front-end\cadastro.html');
+    header('location: /php/Cadastro-de-Produtos/front-end/pagina-cadastro-produto/cadastro.html');
 }
 
 
