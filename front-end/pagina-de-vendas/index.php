@@ -8,8 +8,8 @@
     <script src="javascript/index.js"></script>
 </head>
 <body>
-    
-    
+
+<?php require '../componentes/menu-topo.php'; ?>
 
 </body>
 </html>

@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzaria Jacintho's</title>
-    <meta name="author" content="andriw aparecido">
-    <meta name="keywords" content="cadastro, pizza">
-    <meta name="descrition" content="pagina para cadastro de pizzas">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    <script src="javascript/index.js"></script>
-</head>
-<body>
-    
 <header>
-    
+    <link rel="stylesheet" href="menu.css">
     <div class="menu">
+        <div class="logo-div">
         <svg class="logo" width="100" height="60" viewBox="0 0 212 122" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_21_2)">
             <path d="M60.5339 41.7846C59.6089 41.7846 58.8162 41.4479 58.1556 40.7745C57.4951 40.0655 57.1647 39.2149 57.1647 38.2225C57.1647 37.2301 57.4786 36.3972 58.1061 35.7238C58.7667 35.0504 59.5759 34.7136 60.5339 34.7136C61.4257 34.7136 62.1854 35.0504 62.813 35.7238C63.4406 36.3972 63.7543 37.2301 63.7543 38.2225C63.7543 39.2149 63.4406 40.0655 62.813 40.7745C62.1854 41.4479 61.4257 41.7846 60.5339 41.7846ZM55.282 75.4913V74.4279L58.7502 73.8963V49.5999L55.282 49.0682V48.0049H63.7048V73.8963L67.173 74.4279V75.4913H55.282Z" fill="#DC2C2C"/>
@@ -42,6 +28,7 @@
             </clipPath>
             </defs>
             </svg>
+            </div>
             <ul class="menu-top">
                 <li><a href="">Pizzas</a></li>
                 <li><a href="">Cadastro pizzas</a></li>
@@ -55,75 +42,3 @@
 
     </div>
 </header>
-
-<main>
-
-    <section class="body-conteudo">
-
-        <section class="formulario">
-
-            <h1>CADASTRO DE PIZZAS</h1>
-
-            <form action="\php\Cadastro-de-Produtos\php-action\post.php" class="formula" method="POST" enctype="multipart/form-data">
-                <div class="parte-1">
-
-                    <div class="input-file">
-                        <input type="file"  class="input-file-custom" id="input-file" name="imagem">
-                        <label for="input-file" class="arquivo" tabindex="5"><span class="test">inserir imagem</span><img id="image" src=""></label>
-                        
-                       
-                    
-                    </div>
-                    
-                    <div class="parte-2">
-                        <div class="form input-div" >
-                            <label> Nome </label>
-                            <input type="text" class="input input-nome" name="nome"  placeholder="4 queijos" autocomplete="off" tabindex="1">
-                        </div>
-                        
-                        <div class="form input-categoria">
-                            <label>Categoria</label>
-                            <select class="input input-nome"  name="categoria" tabindex="2">
-                                <option value="---">-</option>
-                                <option class="input input-nome" value="salgada">salgada</option>
-                                <option class="input input-nome" value="doce">doce</option>
-                            </select> 
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="parte-3">
-                    <div class="form">
-                        <label>Valor de venda</label>
-                        <span class="cifrao">R$</span><input type="number"class=" input input-valor" name="venda" step=".01"  placeholder="100.00" tabindex="3">
-                    </div>
-                    <div class="form">
-                        <label>Valor de custo</label>
-                        <span class="cifrao">R$</span><input type="number"class="input input-valor" name="custo" step=".01"  placeholder="100.00" tabindex="4   ">
-                    </div>
-                </div>
-
-                    <div class="form input-descricao" >
-                        <label>Descrição</label>
-                        <textarea type="text" class="descricao"  placeholder="text" cols="1" rows="1" name="descricao" tabindex="6"></textarea>
-
-                    </div>
-                    
-                <div class="input-botao">
-                <button name="btn-enviar" type="submit" class="botao" tabindex="7"> Enviar</button>
-                </div>
-
-            </form>
-            
-
-        </section>
-
-
-    </section>
-    
-
-</main>
-<!-- <script src="javascript/index.js"></script> -->
-</body>
-</html>
