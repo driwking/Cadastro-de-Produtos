@@ -9,7 +9,18 @@
 </head>
 <body>
 
-<?php require '../componentes/menu-topo.php'; ?>
+<?php require_once '../componentes/menu-topo.php';?>
+<section class="main">
+    <?php require_once '../componentes/menu.lateral.php';?>
+    <section class="sec-conteudo">
+    <h1>VENDAS</h1>
+    <h2>CLIENTE</h2>
+    </section>
+    <div class='divi'>
+
+    </div>
+
+</section>
 
 </body>
 </html>

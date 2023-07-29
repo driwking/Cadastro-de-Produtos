@@ -1,6 +1,6 @@
 .menu-lateral{
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: 200px;
     justify-content: center;
     background-color: #B90606;
@@ -47,4 +47,159 @@
     font-size: 18px;
     font-weight:600;
     letter-spacing:2px;
+}
+
+
+/* main */
+
+.main{
+    display:flex;
+}
+
+.sec-conteudo{
+    /* border:red 1px solid; */
+    width: 80%;
+    color: #660000;
+}
+
+.sec-conteudo>h1{
+    font-size:2em;
+    margin-left:51px ;
+    margin-top: 20px;
+}
+
+.sec-conteudo>h2{
+    margin-left:51px;
+    margin-top:53px;
+}
+
+.sec-conteudo>.div-formulario{
+    display: flex;
+    flex-direction: column;
+    border:solid red 1px;
+    color: #000;
+}
+
+.sec-conteudo>.div-formulario >form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #000;
+    padding-top: 33px;
+    padding-left:60px;
+}
+
+
+.sec-conteudo>.div-formulario >form >input, .sec-conteudo>.div-formulario >form >select{
+    border-radius:5px;
+    width: 500px;
+    height: 50px;
+    position:relative;
+}
+
+.sec-conteudo>.div-formulario >form >label{
+    display:block;
+    margin:28px 0 0 0 ;
+    position:relative;
+}
+
+/* segundo forms */
+
+.sec-conteudo>.div-formulario2{
+    display: flex;
+    flex-direction: column;
+    border:solid red 1px;
+    color: #000;
+}
+
+.sec-conteudo>.div-formulario2 >form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #000;
+    padding-top: 33px;
+    padding-left:60px;
+}
+
+
+.sec-conteudo>.div-formulario2 >form >input, .sec-conteudo>.div-formulario2 >form >select{
+    border-radius:5px;
+    width: 400px;
+    height: 50px;
+    position:relative;
+}
+
+.sec-conteudo>.div-formulario2 >form >label{
+    display:block;
+    margin:28px 0 0 0 ;
+    position:relative;
+}
+
+
+
+/* nota fiscal */
+
+.nota-fiscal{
+    border-radius: 5px;
+    margin:0 25%;
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+    border: rgb(168, 168, 168) 1px solid;
+    box-shadow: 0 0 10px rgb(168, 168, 168);
+    height: 691px;
+    width: 503px;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+.ntf-titulo{
+    width: 100%;
+    border: rgb(168, 168, 168) 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 30px;
+}
+.ntf-titulo>h1{
+    display: flex;
+    width: 300px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    border: rgb(168, 168, 168) 1px solid;
+    text-align:center ;
+}
+.ntf-titulo>p{
+    margin-right:50px ;
+}
+
+.ntf-conteudo{
+    border-radius: 5px;
+    margin-bottom:100px;
+    border:1px solid rgb(131, 131, 131);
+    background-color: #FFFBDC;
+    height:85%;
+    width: 100%;
+}
+
+.botao{
+    margin-top: 30px;
+    margin-left:20px ;
+    width: 100%;
+    padding: 20px ;
+    color: rgb(0, 63, 0);
+    font-size: 1.3em;
+    background-color: #fff;
+    box-shadow: 0 0 10px greenyellow;
+    border: .2px solid rgb(93, 255, 93);
+    border-radius:6px;
+}
+.botao:hover{
+    background-color: rgb(158, 248, 158);
+    color: rgb(255, 255, 255);
+    cursor:pointer;
+    border:none;
 }

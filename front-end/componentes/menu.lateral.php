@@ -1,4 +1,6 @@
-<?php require 'menu-topo.php'; ?>
+<?php 
+require 'menu-topo.php'
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -11,7 +13,7 @@
 
 </head>
 <body>
-
+<main class="main">
 <section>
     <div class="menu-lateral">
         <ul class="menu-botao">
@@ -21,6 +23,68 @@
         </ul>
     </div>
 </section>
+<section class="sec-conteudo">
+    <h1>VENDAS</h1>
+    <h2>CLIENTE</h2>
+    
+    <div class='div-formulario'>
+    <form>
+        <label>Cliente:</label><input type="text">
+        <label>Nome:</label><input type="text">
+        <label>Endereço:</label><input type="text"><label>Nº</label><input type="number">
+        <label>Telefone:</label><input type="text">
+    </form>
+    </div>
+    <h2>PEDIDO</h2>
+    
+    <div class='div-formulario2'>
+    <form>
+        <label>Tamnaho Pizza</label>
+        <select name="TamnhoPizza" id="piz">
+            <option value=""></option>
+            <option value="Broto">Broto</option>
+            <option value="Grande">Grande</option>
+            <option value="Big">Big</option>
+        </select>
 
+        <label>Quantidade de sabores</label>
+        <select name="QuantidadeSabores" id="piz">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <label>Sabores</label>
+        <select name="Sabores" id="piz">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+        <label>Adicionais</label>
+        <select name="Adicionais" id="piz">
+            <option value=""></option>
+            <option value="Broto">Bebidas</option>
+            <option value="Grande">Bordas</option>
+            <option value="Big">Molhos</option>
+        </select>
+        <label>Desconto</label><input type="text">
+    </form>
+    </div>
+    <div class="nota-fiscal">
+        <div class="ntf-titulo">
+            <p>icon</p>
+            <h1>NOTA FISCAL</h1>
+        </div>
+
+        <div class="ntf-conteudo">
+        
+        </div>
+    </div>
+    <button class="botao" type="submit">VENDER</button>
+</section>
+</section>
+
+</main>
 </body>
 </html>
