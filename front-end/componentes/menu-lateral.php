@@ -1,5 +1,5 @@
 <?php 
-require 'menu-topo.php'
+// require 'menu-topo.php'
 ?>
 
 <!DOCTYPE html>
@@ -39,14 +39,17 @@ require 'menu-topo.php'
     
     <div class='div-formulario2'>
     <form>
-        <label>Tamnaho Pizza</label>
-        <select name="TamnhoPizza" id="piz">
-            <option value=""></option>
-            <option value="Broto">Broto</option>
-            <option value="Grande">Grande</option>
-            <option value="Big">Big</option>
-        </select>
-
+        <div class="linha-1">
+        <div class="titulo-input">
+            <label>Tamnaho Pizza</label>
+            <select name="TamnhoPizza" id="piz">
+                <option value=""></option>
+                <option value="Broto">Broto</option>
+                <option value="Grande">Grande</option>
+                <option value="Big">Big</option>
+            </select>
+        </div>
+        <div class="titulo-input">
         <label>Quantidade de sabores</label>
         <select name="QuantidadeSabores" id="piz">
             <option value=""></option>
@@ -54,6 +57,8 @@ require 'menu-topo.php'
             <option value="2">2</option>
             <option value="3">3</option>
         </select>
+        </div>
+        <div class="titulo-input">
         <label>Sabores</label>
         <select name="Sabores" id="piz">
             <option value=""></option>
@@ -61,16 +66,25 @@ require 'menu-topo.php'
             <option value=""></option>
             <option value=""></option>
         </select>
-        <label>Adicionais</label>
-        <select name="Adicionais" id="piz">
-            <option value=""></option>
-            <option value="Broto">Bebidas</option>
-            <option value="Grande">Bordas</option>
-            <option value="Big">Molhos</option>
-        </select>
+        </div>
+        </div>
+        
+        <div class="linha-2">
+        <div class="titulo-input">
+            <label>Adicionais</label>
+            <select name="Adicionais" id="piz">
+                <option value=""></option>
+                <option value="Broto">Bebidas</option>
+                <option value="Grande">Bordas</option>
+                <option value="Big">Molhos</option>
+            </select>
+        </div>
+        <div class="titulo-input">  
         <label>Desconto</label><input type="text">
-    </form>
-    </div>
+        </div>
+        </div>
+   
+ <div class="card-ntf">
     <div class="nota-fiscal">
         <div class="ntf-titulo">
             <p>icon</p>
@@ -81,10 +95,13 @@ require 'menu-topo.php'
         
         </div>
     </div>
+    </div>
+    </div>
+    </form>
     <button class="botao" type="submit">VENDER</button>
 </section>
 </section>
-
 </main>
+
 </body>
 </html>

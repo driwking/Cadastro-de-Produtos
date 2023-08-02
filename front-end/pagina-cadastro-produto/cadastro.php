@@ -8,7 +8,7 @@
     <meta name="keywords" content="cadastro, pizza">
     <meta name="descrition" content="pagina para cadastro de pizzas">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../componentes/logo.png" type="image/x-icon">
     <script src="javascript/index.js"></script>
 </head>
 <body>

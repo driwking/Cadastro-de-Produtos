@@ -31,9 +31,9 @@
             </div>
             <ul class="menu-top">
                 <li><a href="">Pizzas</a></li>
-                <li><a href="">Cadastro pizzas</a></li>
+                <li><a href="../pagina-cadastro-produto/cadastro.php">Cadastro pizzas</a></li>
                 <li><a href="">Cadastro produtos</a></li>
-                <li><a href="">Controle de vendas</a></li>
+                <li><a href="../pagina-de-vendas/">Controle de vendas</a></li>
             </ul>
             
             

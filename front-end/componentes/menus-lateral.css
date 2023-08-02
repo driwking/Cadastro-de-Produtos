@@ -7,12 +7,10 @@
 }
 
 .menu-botao{
-    /* margin-top:10px; */
     width: 100%;
 }
 
 .menu-botao >li {
-
     display: flex;
     border-bottom:0.2px solid #ffffffad;
     list-style:none;
@@ -20,7 +18,6 @@
     width: 100%;
     align-items: center;
     justify-content:center;
-    /* padding: 25%; */
 }
 .menu-botao > li:nth-child(1):hover{
     box-shadow: 0 20px 40px rgb(0, 0, 0);
@@ -57,7 +54,6 @@
 }
 
 .sec-conteudo{
-    /* border:red 1px solid; */
     width: 80%;
     color: #660000;
 }
@@ -76,7 +72,6 @@
 .sec-conteudo>.div-formulario{
     display: flex;
     flex-direction: column;
-    border:solid red 1px;
     color: #000;
 }
 
@@ -90,29 +85,26 @@
 }
 
 
-.sec-conteudo>.div-formulario >form >input, .sec-conteudo>.div-formulario >form >select{
+.sec-conteudo>.div-formulario >form >input, .sec-conteudo>.div-formulario >form >select,.linha-1>.titulo-input>select,.linha-2>.titulo-input>select,input{
     border-radius:5px;
     width: 500px;
     height: 50px;
-    position:relative;
+    border:1px solid rgba(0, 0, 0, 0.534);
 }
 
-.sec-conteudo>.div-formulario >form >label{
+.sec-conteudo>.div-formulario >form >label,.linha-1>.titulo-input>select,.linha-2>.titulo-input>select,input{
     display:block;
     margin:28px 0 0 0 ;
-    position:relative;
 }
 
 /* segundo forms */
 
 .sec-conteudo>.div-formulario2{
-    display: flex;
     flex-direction: column;
-    border:solid red 1px;
     color: #000;
 }
 
-.sec-conteudo>.div-formulario2 >form{
+.sec-conteudo>.div-formulario2 >form,.linha-1>.titulo-input> select,.linha-2>.titulo-input>select,input{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -122,30 +114,62 @@
 }
 
 
-.sec-conteudo>.div-formulario2 >form >input, .sec-conteudo>.div-formulario2 >form >select{
+.sec-conteudo>.div-formulario2 >form >input, .sec-conteudo>.div-formulario2 >form >select,.linha-1>.titulo-input>select,.linha-2>.titulo-input>select,input{
     border-radius:5px;
     width: 400px;
     height: 50px;
     position:relative;
 }
 
-.sec-conteudo>.div-formulario2 >form >label{
+.sec-conteudo>.div-formulario2 >form >label,.linha-1>.titulo-input>select,.linha-2>select,input{
     display:block;
     margin:28px 0 0 0 ;
     position:relative;
 }
+.linha-1{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.linha-1>.titulo-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.linha-1>.titulo-input>select{
+    width: 300px;
+}
+.linha-1>.titulo-input>label{
+    display: flex;
+    text-align: center;
+    justify-content: center;
 
+}
+.linha-1>label{
+    display: flex;
+    flex-direction: row;
+}
 
+.linha-2{
+    margin-top: 100px;
+}
+.linha-2>.titulo-input:nth-child(1){
+    margin-bottom: 30px;
+}
 
 /* nota fiscal */
 
+.card-ntf{
+    margin-top:-180px ;
+    margin-left: 10%;
+    display: flex;
+    justify-content: end;
+
+}
+
 .nota-fiscal{
     border-radius: 5px;
-    margin:0 25%;
-    /* display: flex; */
-    justify-content: center;
-    /* align-items: center; */
-    border: rgb(168, 168, 168) 1px solid;
     box-shadow: 0 0 10px rgb(168, 168, 168);
     height: 691px;
     width: 503px;
@@ -164,6 +188,7 @@
     padding: 30px;
 }
 .ntf-titulo>h1{
+    color:#660000;
     display: flex;
     width: 300px;
     height: 70px;
