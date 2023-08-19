@@ -30,7 +30,7 @@
             </svg>
             </div>
             <ul class="menu-top">
-                <li><a href="">Pizzas</a></li>
+                <li><a href="../pagina-de-exibicao/exibicao.php">Pizzas</a></li>
                 <li><a href="../pagina-cadastro-produto/cadastro.php">Cadastro pizzas</a></li>
                 <li><a href="">Cadastro produtos</a></li>
                 <li><a href="../pagina-de-vendas/">Controle de vendas</a></li>
