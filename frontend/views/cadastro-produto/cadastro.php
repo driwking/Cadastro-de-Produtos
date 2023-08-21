@@ -9,10 +9,9 @@
     <meta name="descrition" content="pagina para cadastro de pizzas">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../componentes/logo.png" type="image/x-icon">
-    <script src="javascript/index.js"></script>
 </head>
 <body>
-<?php require '../componentes/menu-topo.php'; ?>
+<?php require '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/menu-topo.php'; ?>
 
 <main>
 
@@ -82,6 +81,6 @@
     
 
 </main>
-<!-- <script src="javascript/index.js"></script> -->
+<script src="javascript/index.js"></script>
 </body>
 </html>
