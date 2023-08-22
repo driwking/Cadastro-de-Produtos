@@ -1,8 +1,8 @@
 <?php
 // conexão datbase
 
-require_once 'C:\xampp\htdocs\php\Cadastro-de-Produtos\php-action\connect.db.php';
-require_once 'C:\xampp\htdocs\php\Cadastro-de-Produtos\php-action\clear.php';
+require_once 'connect.db.php';
+require_once 'clear.php';
 
 
 function Cadastro($sql){
@@ -55,10 +55,10 @@ if(Isset($_POST['btn-enviar']) && !empty($_POST['nome']) && !empty($_POST['categ
         unlink('arquivos/'.$arquivoFinal);
     
 
-    header('location: /php/Cadastro-de-Produtos/front-end/pagina-cadastro-produto/cadastro.html');
+    header('location: /frontend/views/cadastro-produto/cadastro.php');
         
 }else{
-    header('location: /php/Cadastro-de-Produtos/front-end/pagina-cadastro-produto/cadastro.html');
+    header('location: /frontend/views/cadastro-produto/cadastro.php');
 }
 
 

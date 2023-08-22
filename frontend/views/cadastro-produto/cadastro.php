@@ -7,8 +7,8 @@
     <meta name="author" content="andriw aparecido">
     <meta name="keywords" content="cadastro, pizza">
     <meta name="descrition" content="pagina para cadastro de pizzas">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="../componentes/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
 </head>
 <body>
 <?php require '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/menu-topo.php'; ?>
@@ -21,7 +21,7 @@
 
             <h1>CADASTRO DE PIZZAS</h1>
 
-            <form action="\php\Cadastro-de-Produtos\php-action\post.php" class="formula" method="POST" enctype="multipart/form-data">
+            <form action="/backend/post.php" class="formula" method="POST" enctype="multipart/form-data">
                 <div class="parte-1">
 
                     <div class="input-file">

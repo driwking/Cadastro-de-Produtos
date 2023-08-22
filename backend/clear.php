@@ -1,6 +1,6 @@
 <?php
 
-require_once 'C:\xampp\htdocs\php\Cadastro-de-Produtos\php-action\connect.db.php';
+require_once 'connect.db.php';
 
 function clear($input){
     global $connect;

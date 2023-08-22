@@ -8,13 +8,13 @@
     <meta name="keywords" content="exibição, pizza, menu, categoria">
     <meta name="descrition" content="pagina de exibição das pizzas">
     <link rel="stylesheet" href="css/exib-style.css">
-    <link rel="shortcut icon" href="css/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
     
 </head>
 <body>
 
-    <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/front-end/componentes/menu-topo.php'?>
-    <?php echo "<style>"?> <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/front-end/componentes/menu.css'?> <?php echo "</style>"?>
+    <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/menu-topo.php'?>
+    <?php echo "<style>"?> <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu.css'?> <?php echo "</style>"?>
 
     <main>
         <section class="main">
@@ -23,7 +23,7 @@
             <div class="card-pai">
                 <?php
 
-                    require_once 'C:\xampp\htdocs\php\Cadastro-de-Produtos\php-action\connect.db.php';
+                    require_once 'C:\xampp\htdocs\php\Cadastro-de-Produtos\backend\connect.db.php';
 
                     $sql = "SELECT * FROM pizzas";
                     $result = mysqli_query($connect,$sql);
