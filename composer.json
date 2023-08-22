@@ -1,0 +1,19 @@
+{
+    "name": "pizzaria_jacinthos/composer",
+    "description": "site de gestão empresarial para uma pizzaria, a fim de controlar os gastos e gerenciar as vendas e produtos",
+    "type": "project",
+    "license": "Copyright (c) Andriw Aparecido",
+    "autoload": {
+        "psr-4": {
+            "PizzariaJacinthos\\Composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "andriw aparecido",
+            "email": "andriw1919@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}

@@ -3,6 +3,11 @@
 
 
 
+## versão
+
+### PHP 8.1.17 
+### Composer version 2.5.8
+
 #### Para rodar o projeto siga as instruções abaixo
 
 #### run server
