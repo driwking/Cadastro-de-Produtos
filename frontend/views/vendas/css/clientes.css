@@ -1,0 +1,117 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    letter-spacing: 1px !important;
+}
+
+.main{
+    width: 80vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    /* border: red 1px solid; */
+    margin: 0 auto;
+}
+
+h1{
+    align-self: flex-start;
+    margin-top: 23px;
+    margin-left: 39px;
+    /* border: red 1px solid; */
+}
+
+.search-client input{
+    height: 50px;
+    border-radius:100px ;
+    display: flex;
+    text-align: center;
+    padding: 0 ;
+}
+.search-client{
+    /* width: 100vw; */
+    /* border: red 1px solid; */
+}
+.div-buttons{
+    width: 100%;
+    display: flex;
+    margin-top: 23px;
+    justify-content:space-between;
+    color: #fff;
+}
+
+.div-buttons a {
+    margin:0 36px;
+    width: 116px;
+    height: 41px;
+    text-align: center;
+    font-size: 1.1em;
+    border-radius: 5px;
+    background-color: #9F0202;
+    color: #fff;
+    padding-top: 6px;
+}
+
+.div-checkbox-selecionar{
+    margin-top: 26px;
+    margin-left: 24px;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    /* justify-content: space-between;ç */
+    
+}
+
+.div-checkbox-selecionar label{
+    text-align: center;
+    /* width: 40%; */
+}
+.div-checkbox-selecionar input, .list-client input{
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+    margin-top: 0; 
+}
+
+.form-list-client{
+    /* border: red 1px solid !important; */
+    width: 100%;
+}
+
+.list-client{
+    /* border: blue 1px solid !important; */
+    justify-content: space-around !important;
+    align-items: center;
+    width: 100%;
+    height: 44px;
+    display: flex;
+}
+
+.list-client input{
+    margin-left: 30px;
+}
+
+.list-client button{
+    background-color: #9F0202;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 3px;
+    font-size: 1em;
+    color: #ffF;
+    height: 100%;
+    width: 160px;
+}
+.client{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    /* border: red 1px solid !important; */
+    border-bottom:1px solid #000;
+    padding-bottom:10px ;
+    border-radius: 10px;
+}
+
+.client * {
+    margin: 0 30px;
+}

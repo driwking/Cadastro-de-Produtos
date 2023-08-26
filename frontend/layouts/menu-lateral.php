@@ -1,4 +1,4 @@
-<main class="main">
+<main class="main-menu-lateral">
 <section>
     <div class="menu-lateral">
         <ul class="menu-botao">

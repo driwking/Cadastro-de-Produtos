@@ -31,9 +31,10 @@
             </div>
             <ul class="menu-top">
                 <li><a href="../exibicao/exibicao.php">Pizzas</a></li>
-                <li><a href="../cadastro-produto/cadastro.php">Cadastro pizzas</a></li>
+                <li><a href="../cadastro-produto/cadastro.php">Cardapio</a></li>
                 <li><a href="">Cadastro produtos</a></li>
-                <li><a href="../vendas/index.php">Controle de vendas</a></li>
+                <li><a href="">Controle de vendas</a></li>
+                <li><a href="../vendas/index.php">pensando</a></li>
             </ul>
             
             
