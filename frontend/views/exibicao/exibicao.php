@@ -9,12 +9,14 @@
     <meta name="descrition" content="pagina de exibição das pizzas">
     <link rel="stylesheet" href="css/exib-style.css">
     <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
-    
+     <?php echo '<style>'?>
+        <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu-topo.css'  ?>
+    <?php echo '</style>'?>
+
 </head>
 <body>
 
-    <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/menu-topo.php'?>
-    <?php echo "<style>"?> <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu.css'?> <?php echo "</style>"?>
+<?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/menu-topo.php'?>
 
     <main>
         <section class="main">

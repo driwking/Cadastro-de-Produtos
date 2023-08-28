@@ -9,8 +9,13 @@
     <meta name="descrition" content="pagina para cadastro de pizzas">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
+    <?php echo '<style>'?>
+        <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu-topo.css'  ?>
+    <?php echo '</style>'?>
+
 </head>
 <body>
+
 <?php require '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/menu-topo.php'; ?>
 
 <main>

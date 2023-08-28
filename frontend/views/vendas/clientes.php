@@ -23,7 +23,7 @@
                 <input type="search" placeholder="Buscar clientes">
             </form>
             <div class="div-buttons">
-                <a href="">Cadastrar</a>
+                <a href="./cadastroCliente.php">Cadastrar</a>
                 <a href="">Deletar 🗑</a>
             </div>
 
@@ -39,7 +39,7 @@
                         <li>👩‍🍳 Julia Marques</li>
                         <li>📞(41) 1234-56789 </li>
                     </div>
-                    <button>ver contato</button>
+                    <a class="button">ver contato</a>
                 </ul>
                 
             </form>

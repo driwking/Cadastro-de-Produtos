@@ -8,7 +8,7 @@
     <script src="javascript/index.js"></script>
     <?php echo "<style>"?> 
         <?php 
-            include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu.css'
+            include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu-topo.css'
         ?>
         <?php  
             include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu-lateral.css'
