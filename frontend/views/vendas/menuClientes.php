@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>vendas</title>
+        <title>clientes</title>
         <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
         <?php echo '<style>' ?>
             <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu-topo.css'?>
@@ -11,7 +11,7 @@
 
         <?php echo '</style>' ?>
 
-        <link rel="stylesheet" href="./css/clientes.css">
+        <link rel="stylesheet" href="./css/menuClientes.css">
     </head>
     <body>
         <!-- menus -->
@@ -39,7 +39,7 @@
                         <li>👩‍🍳 Julia Marques</li>
                         <li>📞(41) 1234-56789 </li>
                     </div>
-                    <a class="button">ver contato</a>
+                    <a href="./editarCliente.php" class="button">ver contato</a>
                 </ul>
                 
             </form>

@@ -126,3 +126,25 @@ button{
     color: #ffF;
     width: 130px;
 }
+
+button:hover{
+    cursor: pointer;
+}
+
+.btn{
+    font-weight: lighter;
+    margin: 12px 0;
+    height: 39px;
+}
+
+.btn-atualizar{
+    background-color: rgb(26, 75, 211);
+}
+
+.btn-atualizar:hover{
+    background-color:  rgb(48, 90, 206);
+}
+
+.btn-deletar:hover{
+    background-color: #ac2929;
+}

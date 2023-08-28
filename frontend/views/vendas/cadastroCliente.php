@@ -9,7 +9,7 @@
         <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu-topo.css' ?>
         <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu-lateral.css' ?>
     <?php echo "</style>"?>
-    <link rel="stylesheet" href="./css/CadEditCliente.css">
+    <link rel="stylesheet" href="./css/cliente.css">
 </head>
 <body>
 
@@ -17,7 +17,7 @@
     <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/menu-lateral.php' ?>
 
     <div class="div-form">
-    <a class="btn-voltar" href="">< voltar</a>
+    <a class="btn-voltar" href="./menuClientes.php">< voltar</a>
     <h1>CADASTRAR CLIENTE</h1>
     <form class="">
         <div class="row row-1">
