@@ -2,7 +2,7 @@
 .menu-lateral{
     display: flex;
     height: 100%;
-    width: 211px;
+    width: 17.7vw !important;
     justify-content: center;
     background-color: #820E0E;
 }

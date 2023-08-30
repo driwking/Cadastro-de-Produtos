@@ -1,5 +1,4 @@
 <header>
-    <link rel="stylesheet" href="menu.css">
     <div class="menu">
         <div class="logo-div">
         <svg class="logo" width="100" height="60" viewBox="0 0 212 122" fill="none" xmlns="http://www.w3.org/2000/svg">

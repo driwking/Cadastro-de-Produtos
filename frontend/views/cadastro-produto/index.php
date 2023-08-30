@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos</title>
     <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
-    <?php echo "<style>?>" ?>
+    <?php echo "<style>" ?>
     <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu-topo.css' ?>
     <?php echo "</style>" ?>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>

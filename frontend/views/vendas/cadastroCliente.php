@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastre um cliente</title>
+    <title> Cadastre um cliente</title>
     <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
     <?php echo "<style>"?>
         <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu-topo.css' ?>
@@ -21,13 +21,13 @@
     <h1>CADASTRAR CLIENTE</h1>
     <form class="">
         <div class="row row-1">
-        NOME <input type="text">
-        TELEFONE <input type="text">
+        <label>NOME</label> <input type="text">
+        <label>TELEFONE</label><input type="text">
         </div>
         <button>cadastrar</button>
         <div class="row row-2">
-        ENDEREÇO <input type="text">
-        Nº<input type="number">
+        <label>ENDEREÇO</label><input type="text">
+        <label>Nº</label><input type="number">
         </div>  
     </form>
 </body>

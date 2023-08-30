@@ -1,8 +1,3 @@
-*{
-    list-style: none;
-    text-decoration: none;
-    letter-spacing: 1px !important;
-}
 
 .main{
     width: 80vw;
@@ -57,7 +52,7 @@ h1{
     margin-left: 24px;
     display: flex;
     height: 100px;
-    width: 100%;
+    width: 99%;
     /* justify-content: space-between;ç */
     
 }
