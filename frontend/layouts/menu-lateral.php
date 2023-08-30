@@ -5,7 +5,7 @@
             <li><a href="">Overview</a></li>
             <li><a href="">Produtos</a></li>
             <li><a href="">Vendas</a></li>
-            <li><a href="/frontend/views/vendas/menuClientes.php">Clientes</a></li>
+            <li><a href="/clientes">Clientes</a></li>
         </ul>
     </div>
 </section>

@@ -11,7 +11,7 @@
 
         <?php echo '</style>' ?>
 
-        <link rel="stylesheet" href="./css/menuClientes.css">
+        <link rel="stylesheet" href="../css/menuClientes.css">
     </head>
     <body>
         <!-- menus -->

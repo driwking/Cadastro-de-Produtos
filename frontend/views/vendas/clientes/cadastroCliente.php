@@ -9,7 +9,7 @@
         <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu-topo.css' ?>
         <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu-lateral.css' ?>
     <?php echo "</style>"?>
-    <link rel="stylesheet" href="./css/cliente.css">
+    <link rel="stylesheet" href="../css/cliente.css">
 </head>
 <body>
 

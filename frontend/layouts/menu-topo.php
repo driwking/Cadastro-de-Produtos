@@ -31,7 +31,7 @@
             <ul class="menu-top">
                 <li><a href="../exibicao/exibicao.php">Pizzas</a></li>
                 <li><a href="">Cardapio</a></li>
-                <li><a href="../cadastro-produto/cadastro.php">Cadastro produtos</a></li>
+                <li><a href="cadastro.php">Cadastro produtos</a></li>
                 <li><a href="../vendas/">Controle de vendas</a></li>
                 <li><a href="">pensando</a></li>
             </ul>
