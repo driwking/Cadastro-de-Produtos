@@ -27,21 +27,19 @@
         <div class="div-div-inputs">
             <div class="div-inputs">
                 <input type="checkbox">
-                <label for="">NOME</label>
+               <label for=""><a href="/editar-categoria">NOME</a></label>
             </div>
             <div class="div-inputs">
                 <input type="checkbox">
-                <label for="">NOME</label>
+                <label for=""><a href="/editar-categoria">NOME</a></label>
             </div>
             <div class="div-inputs">
                 <input type="checkbox">
-                <label for="">NOME</label>
-
+                <label for=""><a href="/editar-categoria">NOME</a></label>
             </div>
             <div class="div-inputs">
                 <input type="checkbox">
-                <label for="">NOME</label>
-
+                <label for=""><a href="/editar-categoria">NOME</a></label>
             </div>
 
         </div>

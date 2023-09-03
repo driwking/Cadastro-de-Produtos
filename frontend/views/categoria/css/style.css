@@ -108,15 +108,24 @@ form input[type=search] {
 }
 
 .div-inputs label {
-    color: #4E4B4B;
     width: 327px;
-    padding: 10px 20px;
     margin-left: 26px;
     margin-right: 20px;
-    border: 1px solid rgb(140, 140, 140);
     border-radius: 10px;
     display: flex;
     justify-content: center;
+}
+
+.div-inputs a {
+    color: #4E4B4B;
+    width: 100%;
+    border-radius: 10px;
+    height: 43px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(140, 140, 140);
 }
 
 .div-inputs input {
