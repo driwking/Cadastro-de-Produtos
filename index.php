@@ -73,6 +73,7 @@ function route(string $req, string|null $dir = null, string|null $arq = null)
 route('/', 'cadastro-produto', '');
 route('/categorias', 'categoria', '');
 route('/cadastro/categoria','categoria','cadastroCategoria.php');
+route('/editar-categoria','categoria','editarCategoria.php');
 route('/produtos', 'cadastro-produto', 'cadastro.php');
 route('/clientes', 'vendas/clientes', 'menuClientes.php');
 route('/vendas', 'vendas', 'index.php');
