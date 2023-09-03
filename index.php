@@ -70,8 +70,9 @@ function route(string $req, string|null $dir = null, string|null $arq = null)
     }
 }
 
-route('/vendas', 'vendas', 'index.php');
 route('/', 'cadastro-produto', '');
+route('/categorias', 'categoria', '');
+route('/cadastro/categoria','categoria','cadastroCategoria.php');
 route('/produtos', 'cadastro-produto', 'cadastro.php');
 route('/clientes', 'vendas/clientes', 'menuClientes.php');
-route('/categorias', 'categoria', '');
+route('/vendas', 'vendas', 'index.php');
