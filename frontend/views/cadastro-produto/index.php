@@ -24,6 +24,9 @@
         <div class="card-img">
             <img src="/frontend/public/img/Pizza_PNG_Transparente_Grande_Fatias_Sem_Fundo 2.png" alt="pizza">
         </div>
+        <!-- <div class="div-sobra">
+        <p>asdsad</p>
+        </div> -->
 
     </div>
 </body>
