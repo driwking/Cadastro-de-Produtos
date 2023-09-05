@@ -41,7 +41,6 @@ function createFile(string|null $name = null, string $dir)
     }
 }
 
-
 function route(string $req, string|null $dir = null, string|null $arq = null)
 {
     global $routes, $url;
