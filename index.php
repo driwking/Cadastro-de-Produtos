@@ -58,16 +58,24 @@ function route(string $req, string|null $dir = null, string|null $arq = null)
             }
         }
     } elseif ($url) {
-        return 'url =' . $req . '<br>' . 'diretorio = ' . $dir . '<br>' . 'REQUEST_URL = ' . $_SERVER['REQUEST_URI'] . '<br>' . 'arquivo = ' . $arq . '<br>';
+        return 'request_url =' . $req . '<br>' . 'diretorio = ' . $dir . '<br>' . 'URL = ' . $url . '<br>' . 'arquivo = ' . $arq . '<br>';
     }
 }
 
+// categorias
 route('/', 'cadastro-produto', '');
 route('/categorias', 'categoria', '');
-route('/cadastro/categoria', 'categoria', 'cadastroCategoria.php');
-route('/editar-categoria', 'categoria', 'editarCategoria.php');
+route('/categorias/cadastro', 'categoria', 'cadastroCategoria.php');
+route('/categorias/editar', 'categoria', 'editarCategoria.php');
+// pizzas
 route('/pizzas', 'Pizzas', 'index.php');
-route('/editar-pizza','Pizzas','editarPizza.php');
+route('/pizzas/cadastro', 'Pizzas', 'cadastroPizza.php');
+route('/pizzas/editar','Pizzas','editarPizza.php');
+// adicionais
+route('/adicionais','adicionais','index.php');
+route('/adicionais/cadastro','adicionais','cadastroAdicionais.php');
+route('/adicionais/editar','adicionais','editarAdicionais.php');
+// overview
 route('/produtos', 'cadastro-produto', 'cadastro.php');
 route('/clientes', 'vendas/clientes', 'menuClientes.php');
 route('/vendas', 'vendas', 'index.php');
