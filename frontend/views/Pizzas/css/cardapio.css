@@ -1,0 +1,47 @@
+.bar-lateral-cardapio {
+    
+    text-align: center;
+    margin-top: 0;
+    width: 23vw;
+    height: 89vh;
+    /* border: 1px solid #000; */
+    background-color: #992525;
+    color: #fff;
+}
+
+.bar-lateral-cardapio h1 {
+    padding-top: 30px;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #fff;
+    font-weight: bolder;
+    /* font-size: 25px; */
+}
+
+.ul-1{
+    margin-top: 87px;
+}
+.bar-lateral-cardapio ul a p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.bar-lateral-cardapio ul li a p{
+    text-align: start;
+    margin-bottom: 9px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: lighter !important;
+}
+
+.bar-lateral-cardapio ul li a{
+    text-align: start;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: lighter !important;
+}
+
+.ul-2, .ul-3{
+    margin-top: 30px;
+}
