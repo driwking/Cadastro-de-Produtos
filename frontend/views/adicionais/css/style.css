@@ -1,0 +1,135 @@
+h1 {
+    margin-top: 55px;
+    color: #9F0202;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+form {
+    width: 100%;
+    height: 70vh;
+    /* border: 1px solid red; */
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+form * {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    /* margin: auto; */
+}
+
+.label-selecionar {
+    width: 185px;
+    /* border: 1px solid red; */
+    margin-top: 35px;
+    margin-left: 21px;
+    font-weight: 500;
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label-selecionar input {
+    height: 20px;
+    width: 20px;
+}
+
+form input[type=search] {
+    margin-top: 30px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 100px;
+    height: 40px;
+    width: 300px;
+    z-index: 5;
+}
+
+
+.div-buttons {
+    z-index: 1;
+    margin-top: -20px;
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button {
+    cursor: pointer;
+    margin: 0 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: #9F0202;
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 3px;
+    border: none;
+    color: #fff;
+    width: 117px;
+    border-radius: 5px;
+
+}
+
+.div-div-inputs {
+    width: 100%;
+    margin-top: 65px;
+    display: flex;
+    /* justify-content: space-between; */
+    /* margin-right:40px ; */
+    padding: 0 5px;
+    flex-wrap: wrap;
+    max-width: 70%;
+    /* border: #4E4B4B 1px solid; */
+}
+
+.div-inputs:nth-child(1),
+.div-inputs:nth-child(2) {
+    margin-top: 0;
+}
+
+.div-inputs {
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.div-inputs label {
+    width: 327px;
+    margin-left: 26px;
+    margin-right: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.div-inputs a {
+    color: #4E4B4B;
+    width: 100%;
+    border-radius: 10px;
+    height: 43px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(140, 140, 140);
+}
+
+.div-inputs input {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
