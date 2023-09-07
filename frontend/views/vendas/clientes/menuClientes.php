@@ -1,3 +1,4 @@
+<?php session_start()?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -6,8 +7,8 @@
         <title>clientes</title>
         <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
         <?php echo '<style>' ?>
-            <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu-topo.css'?>
-            <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu-lateral.css'?>
+            <?php include_once $_SESSION['dir'].'/frontend/layouts/css/menu-topo.css'?>
+            <?php include_once $_SESSION['dir'].'/frontend/layouts/css/menu-lateral.css'?>
 
         <?php echo '</style>' ?>
 
@@ -15,8 +16,8 @@
     </head>
     <body>
         <!-- menus -->
-        <?php require_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/menu-topo.php'?>
-        <?php require_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/menu-lateral.php'?>
+        <?php require_once $_SESSION['dir'].'/frontend/layouts/menu-topo.php'?>
+        <?php require_once $_SESSION['dir'].'/frontend/layouts/menu-lateral.php'?>
         <section class="main">
             <h1>CLIENTES</h1>
             <form action="" class="search-client">

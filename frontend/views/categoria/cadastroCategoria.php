@@ -1,3 +1,4 @@
+<?php session_start()?>
 <!DOCTYPE html>
 <html lang='pt-br'>
 
@@ -7,14 +8,14 @@
     <title>Cadastre a categoria</title>
     <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
     <style>
-        <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu-topo.css' ?>
+        <?php include_once $_SESSION['dir'].'/frontend/layouts/css/menu-topo.css' ?>
     </style>
     <link rel="stylesheet" href="./css/cadastro.css">
 
 </head>
 
 <body>
-    <?php require_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/menu-topo.php' ?>
+    <?php require_once $_SESSION['dir'].'/frontend/layouts/menu-topo.php' ?>
 
     <h1>CADASTRO DE CATEGORIA</h1>
     <form action="">

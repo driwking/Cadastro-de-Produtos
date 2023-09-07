@@ -1,3 +1,4 @@
+<?php session_start()?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,10 +9,10 @@
     <script src="javascript/index.js"></script>
     <?php echo "<style>"?> 
         <?php 
-            include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu-topo.css'
+            include_once $_SESSION['dir'].'/frontend/layouts/css/menu-topo.css'
         ?>
         <?php  
-            include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu-lateral.css'
+            include_once $_SESSION['dir'].'/frontend/layouts/css/menu-lateral.css'
         ?> 
     <?php echo "</style>"?>
     
@@ -19,9 +20,9 @@
 </head>
 <body>
 
-<?php require_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/menu-topo.php';?>
+<?php require_once $_SESSION['dir'].'/frontend/layouts/menu-topo.php';?>
 
-<?php require_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/menu-lateral.php';?>
+<?php require_once $_SESSION['dir'].'/frontend/layouts/menu-lateral.php';?>
 
 <section class="sec-conteudo">
     <h1>VENDAS</h1>

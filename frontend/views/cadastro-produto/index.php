@@ -1,3 +1,4 @@
+<?php session_start()?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -7,13 +8,13 @@
     <title>Produtos</title>
     <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
     <?php echo "<style>" ?>
-    <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/css/menu-topo.css' ?>
+    <?php include_once $_SESSION['dir'].'/frontend/layouts/css/menu-topo.css' ?>
     <?php echo "</style>" ?>
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <?php require_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/menu-topo.php' ?>
+    <?php require_once $_SESSION['dir'].'/frontend/layouts/menu-topo.php' ?>
     <h1>CONHEÇA SEUS PRODUTOS</h1>
     <div class="produtos-main">
         <ul >
