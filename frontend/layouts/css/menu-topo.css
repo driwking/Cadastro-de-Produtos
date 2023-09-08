@@ -12,11 +12,12 @@
 /* header */
 header {
     width: 95vw;
+    
 }
 
 .menu {
     width: 100%;
-    height: 80px;
+    height: 9vh;
     background-color: #ffffff;
     display: flex;
     margin: 8px;

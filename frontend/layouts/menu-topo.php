@@ -31,10 +31,9 @@
             </a>
         </div>
         <ul class="menu-top">
-            <li><a href="../exibicao/exibicao.php">Pizzas</a></li>
-            <li><a href="">Cardapio</a></li>
-            <li><a href="/produtos">Cadastro produtos</a></li>
-            <li><a href="../vendas/">Controle de vendas</a></li>
+            <li><a href="/pizzas">Cardapio</a></li>
+            <li><a href="/">Cadastro produtos</a></li>
+            <li><a href="/vendas">Controle de vendas</a></li>
             <li><a href="">pensando</a></li>
         </ul>
     </div>
