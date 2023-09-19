@@ -1,5 +1,7 @@
 <?php
 
+$tex = 0;
+
 $url = $_SERVER['REQUEST_URI'];
 
 $routes = array();
@@ -45,22 +47,25 @@ function route(string $req, string|null $dir = null, string|null $arq = null)
 {
     global $routes, $url;
 
+    $routes[$req] = "\\frontend\\views\\" . $dir . '\\' . $arq;
     if ($req == $url) {
 
-        $routes[$req] = "\\frontend\\views\\" . $dir . '\\' . $arq;
         foreach ($routes as $indice => $value) {
             if ($indice == $req) {
 
                 if (makeDir($dir)) {
                     createFile($arq, $dir) . '<br>';
                 }
-                return header('location: ' . $value);
+                
+            }
+            elseif ($url != $req) {
+        
+                return 'request_url =' . $req . '<br>' . 'diretorio = ' . $dir . '<br>' . 'URL = ' . $url . '<br>' . 'arquivo = ' . $arq . '<br>';
             }
         }
-    } elseif ($url) {
-        return 'request_url =' . $req . '<br>' . 'diretorio = ' . $dir . '<br>' . 'URL = ' . $url . '<br>' . 'arquivo = ' . $arq . '<br>';
     }
 }
+
 
 // categorias
 route('/', 'cadastro-produto', '');
@@ -70,12 +75,26 @@ route('/categorias/editar', 'categoria', 'editarCategoria.php');
 // pizzas
 route('/pizzas', 'Pizzas', 'index.php');
 route('/pizzas/cadastro', 'Pizzas', 'cadastroPizza.php');
-route('/pizzas/editar','Pizzas','editarPizza.php');
+route('/pizzas/editar', 'Pizzas', 'editarPizza.php');
 // adicionais
-route('/adicionais','adicionais','index.php');
-route('/adicionais/cadastro','adicionais','cadastroAdicionais.php');
-route('/adicionais/editar','adicionais','editarAdicionais.php');
+route('/adicionais', 'adicionais', 'index.php');
+route('/adicionais/cadastro', 'adicionais', 'cadastroAdicionais.php');
+route('/adicionais/editar', 'adicionais', 'editarAdicionais.php');
 // overview
 route('/produtos', 'cadastro-produto', 'cadastro.php');
 route('/clientes', 'vendas/clientes', 'menuClientes.php');
 route('/vendas', 'vendas', 'index.php');
+
+
+foreach ($routes as $indice => $value) {
+    if ($indice == $url) {
+        header('location:' . $value);
+        break;
+    } else {
+        $tex += 1;
+    }
+}
+
+if($tex == count($routes)){
+    header('location: index.html');
+}
