@@ -1,0 +1,362 @@
+
+/* main */
+input:focus{
+    border: none ;
+    outline: none  ;
+    box-shadow: 0 0 0 !important;
+    border-bottom: 1px solid;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid;
+}
+.main-menu-lateral{
+    display:flex;
+}
+
+.sec-conteudo{
+    width: 80%;
+    color: #660000;
+}
+
+.sec-conteudo h1{
+    color: #660000;
+    font-size: 26px;
+    margin-left: 56px;
+    margin-top: 20px;
+}
+
+.sec-conteudo #titulo-cliente{
+    color: #660000;
+    font-size: 20px;
+    margin-left: 69px;
+    margin-top: 40px;
+}
+form{
+    width: 100%;
+}
+
+.div-cliente{
+    margin-top: 33px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 67px;
+}
+.div-cliente input{
+        /* outline: none;
+        box-shadow: 0 0 0; */
+    border-radius: 5px;
+    height: 42px;
+    width: 480px;
+    padding-left: 21px;
+    z-index: 100;
+    background: none;
+}
+
+.div-cliente select{
+    z-index: 0;
+    margin-left:-10px ;
+    width: 500px;
+    height: 42px;
+    margin-left: -480px;
+    border-radius: 5px;
+    border: none;
+}
+.div-cliente select:focus{
+    border: none;outline: none;
+}
+
+.div-cliente p {
+    margin-left: 23px;
+    margin-right: 23px;
+}
+.div-cliente a{
+    font-weight:500;
+    width: 168px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #125073;
+    background-color: #C1DDED;
+    border: #125073 0.5px solid;
+    border-radius: 100px;
+}
+
+#titulo-pedido{
+    color: #660000;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.qtd-pizzas{
+    font-weight: 600;
+    margin-top: 22px;
+    margin-left: 67px;
+    display: flex;
+    border-radius: 4px;
+}
+.qtd-pizzas label {
+    border-radius: 4px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border:rgb(168, 168, 168) 1px solid;
+    width: 290px;
+    height: 49px;
+}
+
+.qtd-pizzas input{
+    margin-left: 12px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.div-pizzas:nth-child(4){
+    margin-top: 44px !important;
+    
+}
+
+/* pizzas */
+
+.div-pizzas{
+    width: 100%;
+    margin-top: 85px;
+    padding-left: 60px;
+}
+
+.div-pizzas h2{
+    color: #660000;
+    font-size: 20px;
+}
+
+/* tamanhos  */
+
+.div-tamanho-qtd{
+    display: flex;
+}
+
+.div-tamanho-qtd input,.label-tamanho{
+    text-align: center;
+    margin-top:25px ;
+    height: 49px;
+    width: 167px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.div-tamanho-qtd input:last-child{
+    margin-left: 12px;
+    width: 273px;
+}
+
+/* sabores */
+
+.div-sabores{
+    margin-top: 36px;
+}
+
+.div-sabores select{
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 15px;
+    width: 285px;
+    height: 48px;
+}
+
+/* adicionais */
+
+.input-adicionais{
+    margin-top: 46px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.input-adicionais label {
+    color: #000;
+    font-size: 15px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: rgb(173, 173, 173) 1px solid;
+    width: 290px;
+    height: 49px;
+}
+
+.input-adicionais input{
+    margin-left: 12px;
+    font-size: 15px;
+    border-radius: 4px;
+    border-left: none;
+    border-top-left-radius:0 ;
+    border-bottom-left-radius:0 ;
+    text-align: center;
+    width: 110px;
+    height: 49px;
+}
+
+.div-adicionais{
+    margin-top: 34px;
+}
+
+.div-adicionais select{
+    font-size: 15px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-align: center;
+    width: 285px;
+    height: 49px;
+}
+
+/* nota fiscal */
+
+.nota-fiscal{
+    background-color: #BAA09C;
+    margin-top: 64px !important;
+    height: 632px;
+    width: 467px;
+    align-self: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+}
+
+.nota-titulo{
+    border-radius: 6px;
+    width: 332px;
+    height: 65px;
+    background-color: rgba(187, 148, 148, 0.678);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       
+}
+
+.nota-titulo h1{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-weight: 400;
+}
+
+.nota-conteudo{
+    border-radius: 5px;
+    width: 454px;
+    height: 551px;
+    background-color: #FFFBDC;
+}
+
+
+/* desconto */
+
+.div-desconto{
+    margin-top: 50px !important;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+.div-desconto label{
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.div-desconto label:nth-child(1){
+    width: 143px;
+    border: 1px solid rgb(173, 173, 173);
+    
+}
+.div-desconto label:nth-child(3){
+    width: 196px;
+    border: 1px solid rgb(173, 173, 173);
+    /* padding: 0 10px 0 10px; */
+}
+
+.div-desconto label:nth-child(5){
+    width: 71px;
+    border: 1px solid rgb(173, 173, 173);
+}
+
+.div-desconto input{
+    border-left:none;
+    /* background-color: #000; */
+    text-align: center;
+    font-size: 15px;
+    border-radius: 4px;
+    border-left: none;
+    border: 1px solid rgb(156, 156, 156);
+    border-top-left-radius: 0;
+    border-bottom-left-radius:0;
+    height: 48px;
+    margin-right: 68px;
+}
+
+.div-desconto input:nth-child(2){
+    width: 62px;
+}
+
+.div-desconto select{
+    width: 126px;
+    margin-right: 68px;
+}
+
+.div-desconto input:nth-child(6){
+    width: 110px;
+}
+
+
+/* botoes */
+
+.div-botoes{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    height: 58px;
+    margin-top: 43px;
+    padding: 0 50px;
+    margin-bottom: 25px;
+}
+
+.div-botoes button{
+    border-radius: 5px;
+    width: 386px;
+    text-align: center;
+    border: none;
+}
+
+.div-botoes button:first-child{
+    box-shadow: 0 0 4px #94CF35;
+    background-color: #94CF35;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 28px;
+}
+
+.div-botoes button:last-child{
+    box-shadow: 0 0 4px #CF3E35;
+    background-color: #CF3E35;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}

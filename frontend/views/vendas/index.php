@@ -1,111 +1,184 @@
-<?php session_start()?>
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Vendas</title>
     <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
     <script src="javascript/index.js"></script>
-    <?php echo "<style>"?> 
-        <?php 
-            include_once $_SESSION['dir'].'/frontend/layouts/css/menu-topo.css'
-        ?>
-        <?php  
-            include_once $_SESSION['dir'].'/frontend/layouts/css/menu-lateral.css'
-        ?> 
-    <?php echo "</style>"?>
-    
-    
+    <?php echo "<style>" ?>
+    <?php
+    include_once $_SESSION['dir'] . '/frontend/layouts/css/menu-topo.css'
+    ?>
+    <?php
+    include_once $_SESSION['dir'] . '/frontend/layouts/css/menu-lateral.css'
+    ?>
+    <?php echo "</style>" ?>
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
+
 <body>
 
-<?php require_once $_SESSION['dir'].'/frontend/layouts/menu-topo.php';?>
+    <?php require_once $_SESSION['dir'] . '/frontend/layouts/menu-topo.php'; ?>
 
-<?php require_once $_SESSION['dir'].'/frontend/layouts/menu-lateral.php';?>
+    <?php require_once $_SESSION['dir'] . '/frontend/layouts/menu-lateral.php'; ?>
 
-<section class="sec-conteudo">
-    <h1>VENDAS</h1>
-    <h2>CLIENTE</h2>
-    
-    <div class='div-formulario'>
-    <form>
-        <label>Buscar por cliente:</label><input type="search">
-        <label>Nome:</label><input type="text">
-        <label>Endereço:</label><input type="text"><label>Nº</label><input type="number">
-        <label>Telefone:</label><input type="text">
-    </form>
-    </div>
+    <section class="sec-conteudo">
 
-    <h2>PEDIDO</h2>
-    
-    <div class='div-formulario2'>
-    <form>
-        <div class="linha-1">
-        <div class="titulo-input">
-            <label>Tamnaho Pizza</label>
-            <select name="TamnhoPizza" id="piz">
-                <option value=""></option>
-                <option value="Broto">Broto</option>
-                <option value="Grande">Grande</option>
-                <option value="Big">Big</option>
-            </select>
-        </div>
-        <div class="titulo-input">
-        <label>Quantidade de sabores</label>
-        <select name="QuantidadeSabores" id="piz">
-            <option value=""></option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-        </select>
-        </div>
-        <div class="titulo-input">
-        <label>Sabores</label>
-        <select name="Sabores" id="piz">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-        </select>
-        </div>
-        </div>
-        
-        <div class="linha-2">
-        <div class="titulo-input">
-            <label>Adicionais</label>
-            <select name="Adicionais" id="piz">
-                <option value=""></option>
-                <option value="Broto">Bebidas</option>
-                <option value="Grande">Bordas</option>
-                <option value="Big">Molhos</option>
-            </select>
-        </div>
-        <div class="titulo-input">  
-        <label>Desconto</label><input type="text">
-        </div>
-        </div>
-   
- <div class="card-ntf">
-    <div class="nota-fiscal">
-        <div class="ntf-titulo">
-            <p>icon</p>
-            <h1>NOTA FISCAL</h1>
-        </div>
+        <h1>VENDAS</h1>
+        <h2 id="titulo-cliente">CLIENTE</h2>
 
-        <div class="ntf-conteudo">
-        
-        </div>
-    </div>
-    </div>
-    </div>
-    </form>
-    <button class="botao" type="submit">VENDER</button>
-</section>
-</section>
-</main>
+        <form action="">
+
+            <div class="div-cliente">
+                <input type="search">
+                <select name="" id="">
+                    <option value="">teste</option>
+                    <option value="">sddsads</option>
+                    <option value="">gfgfgf</option>
+                </select>
+                <p>ou</p>
+                <a href="" class="btn btn-cadastre">CADASTRE</a>
+            </div>
+
+            <h2 id="titulo-pedido">PEDIDO</h2>
+            <div class="qtd-pizzas">
+                <label for="" class="label-pizzas">pizzas</label>
+                <input type="number" id="input-qtd-pizzas" placeholder="0">
+            </div>
+
+            <div class="div-pizzas">
+
+                <h2>1° PIZZA</h2>
+
+                <div class="div-tamanho-qtd">
+                    <select class="label-tamanho">
+                        <option value="">Tamanho</option>
+                    </select>
+                    <input type="number"  placeholder="Quantidade de sabores">
+                </div>
+                <div class="div-sabores">
+                    <select name="" id="">
+                        <option value="">Sabores 1</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Sabores 2</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Sabores 3</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="input-adicionais">
+                    <label for="">Adicionais</label>
+                    <input type="text" placeholder="Quantidade">
+                </div>
+                <div class="div-adicionais">
+                    <select name="" id="">
+                        <option value="">Adicional 1</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Adicional 2</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Adicional 3</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="div-pizzas">
+                <h2>1° PIZZA</h2>
+                <div class="div-tamanho-qtd">
+                    <input type="text" placeholder="Tamanho">
+                    <input type="number" placeholder="Quantidade de sabores">
+                </div>
+                <div class="div-sabores">
+                    <select name="" id="">
+                        <option value="">Sabores 1</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Sabores 2</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Sabores 3</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="input-adicionais">
+                    <label for="">Adicionais</label>
+                    <input type="text" placeholder="texto">
+                </div>
+                <div class="div-adicionais">
+                    <select name="" id="">
+                        <option value="">Adicional 1</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Adicional 2</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Adicional 3</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="nota-fiscal">
+
+                <div class="nota-titulo">
+                    <h1>Nota fiscal</h1>
+                </div>
+                <div class="nota-conteudo">
+
+                </div>
+            </div>
+
+            <div class="div-desconto">
+
+                <label for="">Desconto R$:</label>
+                <input type="text">
+                <label for="">Entrega ou retirada</label>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                <label for="">Taxa</label>
+                <input type="text">
+
+            </div>
+            <div class="div-botoes">
+
+                <button>Vender</button>
+                <button>Cancelar</button>
+
+            </div>
+        </form>
+    </section>
+    </main>
 
 
 
 </body>
+
 </html>

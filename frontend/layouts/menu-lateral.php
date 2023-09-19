@@ -4,7 +4,7 @@
         <ul class="menu-botao">
             <li><a href="">Overview</a></li>
             <li><a href="">Produtos</a></li>
-            <li><a href="">Vendas</a></li>
+            <li><a href="/vendas">Vendas</a></li>
             <li><a href="/clientes">Clientes</a></li>
         </ul>
     </div>
