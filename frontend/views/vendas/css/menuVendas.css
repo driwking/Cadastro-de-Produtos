@@ -1,0 +1,37 @@
+.main-vendas{
+    width: 100%;
+}
+.main-vendas h1{
+    margin-left: 115px;
+    margin-top: 21px;
+    font-size: 2em;
+    color: #9F0202;
+    font-weight: bold;
+}
+
+.div-botoes{
+    justify-content: space-around;  
+    display: flex;
+    margin-top: 79px;
+}
+
+.btn-1,.btn-2{
+    border-radius: 10px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn-1{
+    width: 249px;
+    background-color: #FFA113;
+}
+
+.btn-2{
+    width: 349px;
+    background-color: #FF0101;
+}

@@ -33,7 +33,7 @@
         <ul class="menu-top">
             <li><a href="/pizzas">Cardapio</a></li>
             <li><a href="/">Cadastro produtos</a></li>
-            <li><a href="/vendas">Controle de vendas</a></li>
+            <li><a href="/Menuvendas">Controle de vendas</a></li>
             <li><a href="">pensando</a></li>
         </ul>
     </div>

@@ -1,0 +1,89 @@
+.topo-historico{
+    width: 100%;
+}
+
+.topo-historico h1 {
+    margin-left: 40px;
+    margin-top: 19px;
+    color: #9F0202;
+    font-size: 2em;
+    font-weight: bold;
+}
+.div-topo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.btn-topo{
+    cursor:pointer;
+    width: 115px;
+    height: 40px;
+    margin-right: 103px;
+    background: none;
+    border: none;
+    color: #CB6B35;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+
+/*  CONTEUDO HISTORICO */
+
+.main-historico{
+    flex-direction:column;
+    display: flex;
+    width: 100%;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.historico-titulo{
+    margin-top: 82px;
+    margin-left: 76px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.historico-titulo h2{
+    font-size: 18px;
+    font-weight: lighter;
+
+}
+
+/* CONTEUDO */
+
+.container-div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.border-bot{
+    width: 100%;
+    background-color: #FAC16A;
+    height: 10px;
+}
+
+.div-conteudo{
+    display: flex;
+    margin-top: 13px;
+    background-color: #FEF6EA;
+    height: 64px;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.div-conteudo h3{
+    
+    font-weight: lighter;
+    font-size: 18px;
+}
