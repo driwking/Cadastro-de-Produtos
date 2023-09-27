@@ -1,3 +1,7 @@
+.body-historico-vendas{
+    display: flex;
+}
+
 .topo-historico{
     width: 100%;
 }

@@ -1,3 +1,6 @@
+.body-clientes-cadastro,.body-clientes-editar{
+    display: flex;
+}
 h1{
     margin-top: 0 !important;
     width: 100%;

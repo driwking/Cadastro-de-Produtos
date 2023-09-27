@@ -1,4 +1,6 @@
-
+.body-index-vendas{
+    display: flex;
+}
 /* main */
 input:focus{
     border: none ;

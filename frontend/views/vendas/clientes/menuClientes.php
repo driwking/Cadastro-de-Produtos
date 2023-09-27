@@ -15,9 +15,12 @@
         <link rel="stylesheet" href="../css/menuClientes.css">
     </head>
     <body>
+        
         <!-- menus -->
         <?php require_once $_SESSION['dir'].'/frontend/layouts/menu-topo.php'?>
-        <?php require_once $_SESSION['dir'].'/frontend/layouts/menu-lateral.php'?>
+        
+        <section class="body-clientes">
+        <?php require_once $_SESSION['dir'] . '/frontend/layouts/menu-lateral.php'; ?>
         <section class="main">
             <h1>CLIENTES</h1>
             <form action="" class="search-client">

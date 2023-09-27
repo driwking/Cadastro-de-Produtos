@@ -24,8 +24,8 @@
 
     <?php require_once $_SESSION['dir'] . '/frontend/layouts/menu-topo.php'; ?>
 
-    <?php require_once $_SESSION['dir'] . '/frontend/layouts/menu-lateral.php'; ?>
-
+    <section class="body-index-vendas">
+        <?php require_once $_SESSION['dir'] . '/frontend/layouts/menu-lateral.php'; ?>
     <section class="sec-conteudo">
 
         <h1>VENDAS</h1>
@@ -175,7 +175,7 @@
             </div>
         </form>
     </section>
-    </main>
+    </section>
 
 
 

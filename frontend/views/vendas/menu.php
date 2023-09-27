@@ -24,18 +24,18 @@
 
     <?php require_once $_SESSION['dir'] . '/frontend/layouts/menu-topo.php'; ?>
 
-    <?php require_once $_SESSION['dir'] . '/frontend/layouts/menu-lateral.php'; ?>
+    <section class="body-vendas">
+        <?php require_once $_SESSION['dir'] . '/frontend/layouts/menu-lateral.php'; ?>
+        <section class="main-vendas">
+            <h1>VENDAS</h1>
 
-    <section class="main-vendas">
-        <h1>VENDAS</h1>
+            <div class="div-botoes">
+                <a href="/vendas" class="btn-1">VENDER</a>
+                <a href="/HistoricoVendas" class="btn-2">HISTÓRICO DE VENDAS</a>
+            </div>
 
-        <div class="div-botoes">
-            <a href="/vendas" class="btn-1">VENDER</a>
-            <a href="/HistoricoVendas" class="btn-2">HISTÓRICO DE VENDAS</a>
-        </div>
-
+        </section>
     </section>
-    </main>
 
 
 
