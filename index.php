@@ -86,6 +86,7 @@ route('/clientes', 'vendas/clientes', 'menuClientes.php');
 route('/vendas', 'vendas', 'index.php');
 route('/Menuvendas', 'vendas', 'menu.php');
 route('/HistoricoVendas','vendas','historico.php');
+route('/historico-cliente','vendas','pageVenda.php');
 
 foreach ($routes as $indice => $value) {
     if ($indice == $url) {

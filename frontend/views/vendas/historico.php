@@ -49,10 +49,26 @@
                 </div>
                 <div class="container-div">
                     <div class="div-conteudo">
-                        <h3>#001</h3>
-                        <h3>Marcia Rodrigues Paula</h3>
-                        <h3>R$ 34,90</h3>
-                        <h3>22:30 - 12/02/23</h3>
+                        <a href="/historico-cliente" class="link-cliente">
+                            <h3>#001</h3>
+                            <h3>Marcia Rodrigues Paula</h3>
+                            <h3>R$ 34,90</h3>
+                            <h3>22:30 - 12/02/23</h3>
+                        </a>
+                    </div>
+                    <div class="border-bot">
+
+                    </div>
+
+                </div>
+                <div class="container-div">
+                    <div class="div-conteudo">
+                        <a href="/historico-cliente" class="link-cliente">
+                            <h3>#001</h3>
+                            <h3>Marcia Rodrigues Paula</h3>
+                            <h3>R$ 34,90</h3>
+                            <h3>22:30 - 12/02/23</h3>
+                        </a>
                     </div>
                     <div class="border-bot">
 

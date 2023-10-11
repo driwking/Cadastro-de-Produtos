@@ -49,10 +49,9 @@
 
 .historico-titulo{
     margin-top: 82px;
-    margin-left: 76px;
+    margin-right: 60px;
     display: flex;
     justify-content: space-around;
-
 }
 
 .historico-titulo h2{
@@ -76,6 +75,7 @@
 }
 
 .div-conteudo{
+    cursor:pointer;
     display: flex;
     margin-top: 13px;
     background-color: #FEF6EA;
@@ -87,7 +87,24 @@
 }
 
 .div-conteudo h3{
-    
     font-weight: lighter;
     font-size: 18px;
+}
+.link-cliente{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    color: #000;
+}
+
+.link-cliente h3:nth-child(2){
+    margin-right: 40px;
+}
+
+.link-cliente h3:nth-child(1){
+    margin-left: 15px;
+}
+
+.link-cliente h3:nth-child(3){
+    margin-left: -55px;
 }
