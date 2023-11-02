@@ -18,4 +18,6 @@
 
     composer require
 
+#### alterar o path do projeto em directory.php
 
+    $path = '/seu diretorio do projeto/';
