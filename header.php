@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
     <title><?php echo $_SESSION['title'] ?></title>
     <style>
-        <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/menu-topo.php' ?>
+        <?php include_once $_SESSION['layouts-css'] . 'menu-topo.css' ?>
     </style>
     <link rel="stylesheet" href="./css/">
 
@@ -16,7 +16,7 @@
 
 <body>
 
-    <?php include_once '/xampp/htdocs/php/Cadastro-de-Produtos/frontend/layouts/menu-topo.php' ?>
+    <?php include_once $_SESSION['layouts'] . 'menu-topo.php' ?>
 
 </body>
 
