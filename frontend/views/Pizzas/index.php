@@ -8,14 +8,14 @@
     <link rel='shortcut icon' href='/frontend/public/img/logo.png' type="image/x-icon">
     <title>Pizzas</title>
     <style>
-        <?php include_once $_SESSION['dir'] . '/frontend/layouts/css/menu-topo.css' ?>
+        <?php include_once $_SESSION['layouts-css'] . 'menu-topo.css' ?>
     </style>
     <link rel='stylesheet' href="./css/cardapio.css">
 </head>
 
 <body>
 
-    <?php require_once $_SESSION['dir'] . '/frontend/layouts/menu-topo.php' ?>
+    <?php require_once $_SESSION['layouts'] . 'menu-topo.php' ?>
 
     <div class="banner">
         <img src="/frontend/public//img/Pizza_PNG_Transparente_Grande_Fatias_Sem_Fundo 2.png" alt="">
@@ -96,48 +96,48 @@
                         </div>
                     </div>
                     <div>
-                    <h2>Salgada</h2>
-                    <div class="div-pizzas">
-                        <div class="card">
-                            <div class="card-img"><img src="/frontend/public/img/pizza_1441666 1.png" alt=""></div>
-                            <p>nome da pizza</p>
-                        </div>
-                        <div class="card">
-                            <div class="card-img"><img src="/frontend/public/img/pizza_1441666 1.png" alt=""></div>
-                            <p>nome da pizza</p>
-                        </div>
-                        <div class="card">
-                            <div class="card-img"><img src="/frontend/public/img/pizza_1441666 1.png" alt=""></div>
-                            <p>nome da pizza</p>
-                        </div>
-                        <div class="card">
-                            <div class="card-img"><img src="/frontend/public/img/pizza_1441666 1.png" alt=""></div>
-                            <p>nome da pizza</p>
-                        </div>
-                        <div class="card">
-                            <div class="card-img"><img src="/frontend/public/img/pizza_1441666 1.png" alt=""></div>
-                            <p>nome da pizza</p>
-                        </div>
-                        <div class="card">
-                            <div class="card-img"><img src="/frontend/public/img/pizza_1441666 1.png" alt=""></div>
-                            <p>nome da pizza</p>
-                        </div>
-                        <div class="card">
-                            <div class="card-img"><img src="/frontend/public/img/pizza_1441666 1.png" alt=""></div>
-                            <p>nome da pizza</p>
-                        </div>
-                        <div class="card">
-                            <div class="card-img"><img src="/frontend/public/img/pizza_1441666 1.png" alt=""></div>
-                            <p>nome da pizza</p>
-                        </div>
-                        <div class="card">
-                            <div class="card-img"><img src="/frontend/public/img/pizza_1441666 1.png" alt=""></div>
-                            <p>nome da pizza</p>
+                        <h2>Salgada</h2>
+                        <div class="div-pizzas">
+                            <div class="card">
+                                <div class="card-img"><img src="/frontend/public/img/pizza_1441666 1.png" alt=""></div>
+                                <p>nome da pizza</p>
+                            </div>
+                            <div class="card">
+                                <div class="card-img"><img src="/frontend/public/img/pizza_1441666 1.png" alt=""></div>
+                                <p>nome da pizza</p>
+                            </div>
+                            <div class="card">
+                                <div class="card-img"><img src="/frontend/public/img/pizza_1441666 1.png" alt=""></div>
+                                <p>nome da pizza</p>
+                            </div>
+                            <div class="card">
+                                <div class="card-img"><img src="/frontend/public/img/pizza_1441666 1.png" alt=""></div>
+                                <p>nome da pizza</p>
+                            </div>
+                            <div class="card">
+                                <div class="card-img"><img src="/frontend/public/img/pizza_1441666 1.png" alt=""></div>
+                                <p>nome da pizza</p>
+                            </div>
+                            <div class="card">
+                                <div class="card-img"><img src="/frontend/public/img/pizza_1441666 1.png" alt=""></div>
+                                <p>nome da pizza</p>
+                            </div>
+                            <div class="card">
+                                <div class="card-img"><img src="/frontend/public/img/pizza_1441666 1.png" alt=""></div>
+                                <p>nome da pizza</p>
+                            </div>
+                            <div class="card">
+                                <div class="card-img"><img src="/frontend/public/img/pizza_1441666 1.png" alt=""></div>
+                                <p>nome da pizza</p>
+                            </div>
+                            <div class="card">
+                                <div class="card-img"><img src="/frontend/public/img/pizza_1441666 1.png" alt=""></div>
+                                <p>nome da pizza</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        
+
         </section>
 </body>
 

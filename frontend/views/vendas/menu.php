@@ -10,10 +10,10 @@
     <script src="javascript/index.js"></script>
     <?php echo "<style>" ?>
     <?php
-    include_once $_SESSION['dir'] . '/frontend/layouts/css/menu-topo.css'
+    include_once $_SESSION['layouts-css'] . 'menu-topo.css'
     ?>
     <?php
-    include_once $_SESSION['dir'] . '/frontend/layouts/css/menu-lateral.css'
+    include_once $_SESSION['layouts-css'] . 'menu-lateral.css'
     ?>
     <?php echo "</style>" ?>
     <link rel="stylesheet" href="./css/menuVendas.css">
@@ -22,10 +22,10 @@
 
 <body>
 
-    <?php require_once $_SESSION['dir'] . '/frontend/layouts/menu-topo.php'; ?>
+    <?php require_once $_SESSION['layouts'] . 'menu-topo.php' ?>
 
     <section class="body-vendas">
-        <?php require_once $_SESSION['dir'] . '/frontend/layouts/menu-lateral.php'; ?>
+        <?php require_once $_SESSION['layouts'] . 'menu-lateral.php' ?>
         <section class="main-vendas">
             <h1>VENDAS</h1>
 

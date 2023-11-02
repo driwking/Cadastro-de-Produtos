@@ -1,4 +1,4 @@
-<?php session_start()?>
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang='pt-br'>
 
@@ -8,14 +8,14 @@
     <title>Cadastre a categoria</title>
     <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
     <style>
-        <?php include_once $_SESSION['dir'].'/frontend/layouts/css/menu-topo.css' ?>
+        <?php include_once $_SESSION['layouts-css'] . 'menu-topo.css' ?>
     </style>
     <link rel="stylesheet" href="./css/cadastro.css">
 
 </head>
 
 <body>
-    <?php require_once $_SESSION['dir'].'/frontend/layouts/menu-topo.php' ?>
+    <?php require_once $_SESSION['layouts'] . 'menu-topo.php' ?>
 
     <h1>CADASTRO DE CATEGORIA</h1>
     <form action="">
@@ -37,9 +37,9 @@
             <input type="text" placeholder="broto">
             <input type="number">
         </div>
-            <div class="form-button">
-                <a class="button" href="/categorias">voltar</a>
-                <button class="button">cadastrar</button>
-            </div>
-        </form>
+        <div class="form-button">
+            <a class="button" href="/categorias">voltar</a>
+            <button class="button">cadastrar</button>
+        </div>
+    </form>
 </body>

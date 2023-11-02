@@ -1,26 +1,28 @@
-<?php session_start()?>
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>clientes</title>
-        <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
-        <?php echo '<style>' ?>
-            <?php include_once $_SESSION['dir'].'/frontend/layouts/css/menu-topo.css'?>
-            <?php include_once $_SESSION['dir'].'/frontend/layouts/css/menu-lateral.css'?>
 
-        <?php echo '</style>' ?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clientes</title>
+    <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
+    <?php echo '<style>' ?>
+    <?php include_once $_SESSION['layouts-css'] . 'menu-topo.css' ?>
+    <?php include_once $_SESSION['layouts-css'] . 'menu-lateral.css' ?>
 
-        <link rel="stylesheet" href="../css/menuClientes.css">
-    </head>
-    <body>
-        
-        <!-- menus -->
-        <?php require_once $_SESSION['dir'].'/frontend/layouts/menu-topo.php'?>
-        
-        <section class="body-clientes">
-        <?php require_once $_SESSION['dir'] . '/frontend/layouts/menu-lateral.php'; ?>
+    <?php echo '</style>' ?>
+
+    <link rel="stylesheet" href="../css/menuClientes.css">
+</head>
+
+<body>
+
+    <!-- menus -->
+    <?php require_once $_SESSION['layouts'] . 'menu-topo.php' ?>
+
+    <section class="body-clientes">
+        <?php require_once $_SESSION['layouts'] . 'menu-lateral.php' ?>
         <section class="main">
             <h1>CLIENTES</h1>
             <form action="" class="search-client">
@@ -33,7 +35,7 @@
 
             <div class="div-checkbox-selecionar">
                 <label for="selecionar">selecionar todos</label>
-                <input type="checkbox" name="selecionar" id="selecionar">   
+                <input type="checkbox" name="selecionar" id="selecionar">
             </div>
 
             <form class="form-list-client">
@@ -45,8 +47,9 @@
                     </div>
                     <a href="./editarCliente.php" class="button">ver contato</a>
                 </ul>
-                
+
             </form>
         </section>
-    </body>
+</body>
+
 </html>

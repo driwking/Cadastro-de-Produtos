@@ -1,4 +1,4 @@
-<?php session_start()?>
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang='pt-br'>
 
@@ -8,11 +8,11 @@
     <link rel='shortcut icon' href='/frontend/public/img/logo.png' type="image/x-icon">
     <title>Pizzas</title>
     <style>
-        <?php include_once $_SESSION['dir'].'/frontend/layouts/css/menu-topo.css' ?>
+        <?php include_once $_SESSION['layouts-css'] . 'menu-topo.css' ?>
     </style>
     <link rel='stylesheet' href="./css/index.css">
 </head>
-<?php require_once $_SESSION['dir'].'/frontend/layouts/menu-topo.php' ?>
+<?php require_once $_SESSION['layouts'] . 'menu-topo.php' ?>
 
 <h1>CADASTRO DE PIZZAS</h1>
 

@@ -1,4 +1,4 @@
-<?php session_start()?>
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="css/exib-style.css">
     <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
     <?php echo '<style>' ?>
-    <?php include_once $_SESSION['dir'] . '/frontend/layouts/css/menu-topo.css'  ?>
+    <?php include_once $_SESSION['layouts-css'] . 'menu-topo.css' ?>
     <?php echo '</style>' ?>
 
 </head>
 
 <body>
 
-    <?php include_once $_SESSION['dir'] . '/frontend/layouts/menu-topo.php' ?>
+    <?php require_once $_SESSION['layouts'] . 'menu-topo.php' ?>
 
     <main>
         <section class="main">
@@ -30,7 +30,7 @@
             <div class="card-pai">
                 <?php
 
-                require_once $_SESSION['dir'].'\backend\connect.db.php';
+                require_once $_SESSION['dir'] . '\backend\connect.db.php';
 
                 $sql = "SELECT * FROM pizzas";
                 $result = mysqli_query($connect, $sql);
@@ -45,7 +45,7 @@
                 ?>
                         <div class="card">
                             <div class="sub-card"><?php echo '<img class="img" src="data:image/png;base64,' . base64_encode($dados['imagem']) . '" alt=""/>' ?><div class="descricao"><span class="span"><?php
-                                                                                                                                                                                                        echo $dados['descricao'] ?>
+                                                                                                                                                                                                            echo $dados['descricao'] ?>
                                     </span></div>
                             </div>
                         </div>
