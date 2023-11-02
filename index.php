@@ -1,12 +1,23 @@
 <?php
-
+session_start();
 $tex = 0;
 
 $url = $_SERVER['REQUEST_URI'];
 
 $routes = array();
 
-function makeDir(string|null $name = null)
+function insertContent(string $file){
+
+    $arquivo = file('header.php');
+      
+    for($i = 0; !empty($arquivo[$i]);$i++) {
+        
+        fwrite(fopen($file,'a'),$arquivo[$i])."\n";
+    }
+
+}
+
+function makeDir(string|null $name = null): bool
 {
     echo $dirName = __DIR__ . '\\frontend\\views\\' . $name;
     echo '<br>';
@@ -18,7 +29,12 @@ function makeDir(string|null $name = null)
     }
 }
 
-function createFile(string|null $name = null, string $dir)
+Class Arquivo{
+
+    public String $name;
+}
+$aquivo = new Arquivo;
+function createFile(string|null $name = null, string $dir): string
 {
     $dir = 'frontend/views/' . $dir . '/';
     echo "<hr>";
@@ -28,6 +44,8 @@ function createFile(string|null $name = null, string $dir)
             $padrao = '/^[a-z\-\0-9]+(.php|.html)$/i';
             if (preg_match($padrao, $name)) {
                 $file = fopen($dir . $name, 'a');
+                insertContent($dir.$name);
+
             } else {
                 $file = false;
             }
@@ -41,6 +59,11 @@ function createFile(string|null $name = null, string $dir)
     } else {
         return "arquivo ja existente";
     }
+    
+
+
+
+
 }
 
 function route(string $req, string|null $dir = null, string|null $arq = null)
@@ -88,6 +111,10 @@ route('/Menuvendas', 'vendas', 'menu.php');
 route('/HistoricoVendas','vendas','historico.php');
 route('/historico-cliente','vendas','pageVenda.php');
 
+// teste
+
+route('/TESTE','TESTE','teste.php');
+
 foreach ($routes as $indice => $value) {
     if ($indice == $url) {
         header('location:' . $value);
@@ -100,3 +127,5 @@ foreach ($routes as $indice => $value) {
 if($tex == count($routes)){
     header('location: index.html');
 }
+
+?>
