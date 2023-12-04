@@ -24,4 +24,4 @@
 
 #### alterar o path do projeto em directory.php
 
-    $path = '/seu diretorio do projeto/';
+    $path = '/seu diretorio do projeto/'; ex: 'C://xampp/htdocs/php/Cadastro-de-Produtos/index.php'
