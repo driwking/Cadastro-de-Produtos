@@ -16,8 +16,9 @@
 <body>
 
     <?php require_once $_SESSION['layouts'] . 'menu-topo.php' ?>
+    <?php  var_dump($_POST) ?>
     <h1>EDITAR CATEGORIA</h1>
-    <form action="">
+    <form action="" method="POST">
         <h2>PRINCIPAL</h2>
         <input type="text" id="input-1" placeholder="tasf">
         <div class="div-buttons">

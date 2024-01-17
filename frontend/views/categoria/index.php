@@ -1,4 +1,7 @@
-<?php session_start() ?>
+<?php session_start();
+
+require_once $_SESSION['crud'];
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -18,34 +21,38 @@
 
     <h1>MENU DE CATEGORIA</h1>
 
-    <form action="">
+    <form id="form-search" action="/frontend/views/categoria/editarCategoria.php" method="POST">
         <input type="search" placeholder="Buscar categoria">
-        <div class="div-buttons">
-            <a href="/categorias/cadastro" class="button">cadastrar</a>
-            <button class="button">deletar</button>
-        </div>
-        <label class="label-selecionar" for="">selectionar todos<input type="checkbox"></label>
-        <div class="div-div-inputs">
-            <div class="div-inputs">
-                <input type="checkbox">
-                <label for=""><a href="/categorias/editar">NOME</a></label>
-            </div>
-            <div class="div-inputs">
-                <input type="checkbox">
-                <label for=""><a href="/categorias/editar">NOME</a></label>
-            </div>
-            <div class="div-inputs">
-                <input type="checkbox">
-                <label for=""><a href="/categorias/editar">NOME</a></label>
-            </div>
-            <div class="div-inputs">
-                <input type="checkbox">
-                <label for=""><a href="/categorias/editar">NOME</a></label>
-            </div>
-
-        </div>
     </form>
+    <div class="div-buttons">
+        <form id="form-cad" action="/frontend/views/categoria/editarCategoria.php" method="POST">
+            <a href="/categorias/cadastro" class="button">cadastrar</a>
+        </form>
+        <form id="form-del" action="/frontend/views/categoria/editarCategoria.php" method="POST">
+            <button class="button">deletar</button>
+        </form>
+    </div>
 
+    <label class="label-selecionar" for="">selecionar todos<input type="checkbox"></label>
+    <div class="div-btns">
+        <?php
+        for ($i = 1; $i < count_register(); $i++) {
+
+        ?>
+            <div class="div-div-inputs">
+
+                <!-- <input type="checkbox" name='id' value='<?php echo $i ?>'> -->
+                <form id="form-btn" action="/frontend/views/categoria/editarCategoria.php" method="POST">
+                    <label for="botao">
+                        <input type="hidden" name='id<?php echo $i ?>' value='<?php echo id($i) ?>'>
+                        <input name="botao" type='submit' class='link' value='<?php read() ?>'>
+                    </label>
+                </form>
+
+                <br>
+            </div>
+        <?php }; ?>
+    </div>
     <p><span style="color:red">clique</span> para atualizar ou ver sub categorias</p>
 </body>
 

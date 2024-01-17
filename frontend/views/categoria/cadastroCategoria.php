@@ -11,31 +11,30 @@
         <?php include_once $_SESSION['layouts-css'] . 'menu-topo.css' ?>
     </style>
     <link rel="stylesheet" href="./css/cadastro.css">
-
 </head>
 
 <body>
     <?php require_once $_SESSION['layouts'] . 'menu-topo.php' ?>
-
     <h1>CADASTRO DE CATEGORIA</h1>
-    <form action="">
-
+    <form action="/backend/models/cadastro-pizza/index.php" method="POST">
         <select id="lista">
             <option value="teste">teste</option>
         </select>
         <div class="categoria-principal">
             <label for="">CATEGORIA PRINCIPAL</label>
-            <input type="text" placeholder="TRADICIONAL">
+            <input type="text" placeholder="TRADICIONAL" name="0">
         </div>
         <div class="categoria-segundaria">
             <label for="">CATEGORIA SEGUNDARIA</label>
-            <input type="text" placeholder="SALGADA">
-            <input type="text" placeholder="DOCE">
+            <input type="text" placeholder="SALGADA" name="1">
+            <input type="text" placeholder="DOCE" name="2">
+            <button>➕</button>
+            <button>➖</button>
         </div>
         <div class="div-tamanho">
             <label for="">TAMANHO DAS PIZZAS</label>
-            <input type="text" placeholder="broto">
-            <input type="number">
+            <input type="text" placeholder="broto" name="3">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
         </div>
         <div class="form-button">
             <a class="button" href="/categorias">voltar</a>

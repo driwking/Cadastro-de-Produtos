@@ -5,19 +5,35 @@ h1 {
 }
 
 p {
+   
     margin-bottom: 0;
     text-align: center;
 }
 
 
-form {
+#form-search {
     width: 100%;
-    height: 70vh;
+
     /* border: 1px solid red; */
     display: flex;
     margin: auto;
     flex-direction: column;
     /* justify-content: center; */
+}
+.div-btns{
+    /* background-color: red; */
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 200px;
+    flex-wrap:wrap ;
+   
+}
+#form-btn{
+    display: flex;
+    /* width: 50%; */
 }
 
 form * {
@@ -86,10 +102,12 @@ form input[type=search] {
 }
 
 .div-div-inputs {
-    width: 100%;
+    width: 327px;
+    height: 44px;
     margin-top: 65px;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
     /* margin-right:40px ; */
     padding: 0 5px;
     flex-wrap: wrap;
@@ -97,13 +115,16 @@ form input[type=search] {
     /* border: #4E4B4B 1px solid; */
 }
 
-.div-inputs:nth-child(1),
-.div-inputs:nth-child(2) {
-    margin-top: 0;
+.div-div-inputs:nth-child(1),
+.div-div-inputs:nth-child(2){
+    margin-bottom: -10px;
 }
 
 .div-inputs {
-    margin-right: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction:row ;
+    margin-left: 150px;
     margin-top: 40px;
 }
 
@@ -115,8 +136,15 @@ form input[type=search] {
     display: flex;
     justify-content: center;
 }
-
-.div-inputs a {
+.div-div-inputs form{
+    width: 100%;
+}
+.div-div-inputs form label{
+    width: 100%;
+}
+.div-div-inputs input {
+    background-color: #fff;
+    cursor: pointer;
     color: #4E4B4B;
     width: 100%;
     border-radius: 10px;

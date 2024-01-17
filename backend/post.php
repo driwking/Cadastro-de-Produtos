@@ -18,8 +18,22 @@ function Cadastro($sql){
 
 function verificacao(){
 
-    global $nome,$categoria, $connect;
-    $sql = "SELECT * FROM `pizzas` WHERE `nome` = '$nome'";
+    global  $nome,$categoria,$connect;
+    $sql = "SELECT * FROM `categorias` WHERE nome` = '$nome'";
+    $query = mysqli_query($connect, $sql);
+
+    if(mysqli_num_rows($query)>0){
+        return true;
+    }else{
+        return false;
+    }
+
+}
+
+function verifi(String $nome){
+
+    global  $connect;
+    $sql = "SELECT * FROM `categorias` WHERE `nome` = '$nome'";
     $query = mysqli_query($connect, $sql);
 
     if(mysqli_num_rows($query)>0){
@@ -43,7 +57,7 @@ if(Isset($_POST['btn-enviar']) && !empty($_POST['nome']) && !empty($_POST['categ
     print_r($_POST);    
     
     // Cadastro 
-    if(verificacao() == true){
+    if(verificacao('') == true){
         echo "produto já cadastrado";
     }else{
         $sql = "INSERT INTO `pizzas`(`nome`, `categoria`, `venda`, `custo`, `descricao`,`imagem`) VALUES ('$nome','$categoria',$venda,$custo,'$descricao','$img')";
