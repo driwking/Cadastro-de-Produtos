@@ -14,10 +14,14 @@
 
     php -S localhost:3000
 
+#### aviso: caso encontre erro nas sessions faça o seguinte: acesse o arquivo no endpoint
+
+    http://localhost:3000/directory.php
+
 #### dependencies
 
     composer require
 
 #### alterar o path do projeto em directory.php
 
-    $path = '/seu diretorio do projeto/';
+    $path = '/seu diretorio do projeto/'; ex: 'C://xampp/htdocs/php/Cadastro-de-Produtos/index.php'
