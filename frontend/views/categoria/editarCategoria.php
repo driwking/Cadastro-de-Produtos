@@ -1,4 +1,13 @@
-<?php session_start() ?>
+<?php 
+session_start(); 
+require_once $_SESSION['crud'];
+
+// POST FORM  
+
+echo $id = $_POST['id'];
+$id_seq = $_POST['id_seq']
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -20,7 +29,7 @@
     <h1>EDITAR CATEGORIA</h1>
     <form action="" method="POST">
         <h2>PRINCIPAL</h2>
-        <input type="text" id="input-1" placeholder="tasf">
+        <input type="text" id="input-1" placeholder="tasf" value="<?php echo read($id_seq) ?>">
         <div class="div-buttons">
             <a class="button btn-1" href="/categorias">voltar ao menu</a>
             <button class="button btn-2">atualizar</button>
@@ -32,8 +41,8 @@
         </div>
         <div class="div-inputs">
 
-            <input type="text" placeholder="testeetst">
-            <input type="text" placeholder="testeetst">
+            <input type="text" placeholder="testeetst" value="<?php echo names_complet($id)[0] ?>">
+            <input type="text" placeholder="testeetst" value="<?php echo names_complet($id)[1] ?>">
             <input type="text" placeholder="testeetst">
 
         </div>

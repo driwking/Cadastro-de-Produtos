@@ -1,5 +1,5 @@
-<?php session_start();
-
+<?php
+session_start();
 require_once $_SESSION['crud'];
 ?>
 <!DOCTYPE html>
@@ -36,16 +36,17 @@ require_once $_SESSION['crud'];
     <label class="label-selecionar" for="">selecionar todos<input type="checkbox"></label>
     <div class="div-btns">
         <?php
-        for ($i = 1; $i < count_register(); $i++) {
-
+        $j = 0;
+        for ($i = 0; $i < count_register(); $i++) {
+        $j++;
         ?>
             <div class="div-div-inputs">
 
-                <!-- <input type="checkbox" name='id' value='<?php echo $i ?>'> -->
                 <form id="form-btn" action="/frontend/views/categoria/editarCategoria.php" method="POST">
                     <label for="botao">
-                        <input type="hidden" name='id<?php echo $i ?>' value='<?php echo id($i) ?>'>
-                        <input name="botao" type='submit' class='link' value='<?php read() ?>'>
+                        <input type="hidden" name='id' value='<?php echo id($j) ?>'>
+                        <input type="hidden" name='id_seq' value='<?php echo $j ?>'>
+                        <input name="botao" type='submit' class='link' value='<?php echo read($j) ?>'>
                     </label>
                 </form>
 

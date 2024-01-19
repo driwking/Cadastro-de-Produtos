@@ -40,19 +40,21 @@ function create(String $nome_prim, String | Null $nome_seg, String | Null $nome_
     }
 }
 
-function read()
+function read(int $i)
 {
 
     global $connect;
     $row = [];
+    $list = [];
     $sql = "SELECT nome_principal FROM categorias";
     $query = mysqli_query($connect, $sql);
-    for ($i = 0; mysqli_num_rows($query) < $i; $i++) {
+    $k = 0;
+    for ($j = 0; mysqli_num_rows($query) > $j; $j++) {
+        $k++;
         $row = mysqli_fetch_array($query, MYSQLI_BOTH);
-        $list[$i] = $row['nome_principal'];
-        print_r($list);
+        $list[$k] = $row['nome_principal'];
     }
-    
+    return $list[$i];
 }
 
 
@@ -60,22 +62,29 @@ function id(int $id)
 {
 
     global $connect;
-    $sql = 'SELECT id FROM categorias WHERE id = ' . $id;
+    $row = [];
+    $list = [];
+    $sql = 'SELECT id FROM categorias';
     $query = mysqli_query($connect, $sql);
-    $row = mysqli_fetch_array($query, MYSQLI_BOTH);
-    print_r($row);
-    return $row['id'];
+    $k = 0;
+    for ($j = 0; mysqli_num_rows($query) > $j; $j++) {
+        $k++;
+        $row = mysqli_fetch_array($query, MYSQLI_BOTH);
+        $list[$k] = $row['id'];
+    }
+    return $list[$id];
 }
 
-// $sql = "SELECT nome_principal FROM categorias ";
-// $query = mysqli_query($connect, $sql);
-// for($i = 0; mysqli_num_rows($query) > $i; $i++){
+function names_complet($id){
 
-//     $row = mysqli_fetch_array($query, MYSQLI_BOTH);
-//     $list[$i] = $row['id'];
-//     print_r($list);
-// }
+    global $connect;
+    $sql = 'SELECT nome_segundario, nome_terciario FROM categorias WHERE id ='.$id;
+    $row = [];
+    $query = mysqli_query($connect, $sql);
+    $row = mysqli_fetch_array($query, MYSQLI_BOTH);
 
+    return $row;
+}
 
-read();
-// print_r($row);
+// echo id(4);
+//echo names_complet(4)[0];
