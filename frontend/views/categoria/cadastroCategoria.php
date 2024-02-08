@@ -17,9 +17,7 @@
     <?php require_once $_SESSION['layouts'] . 'menu-topo.php' ?>
     <h1>CADASTRO DE CATEGORIA</h1>
     <form action="/backend/models/cadastro-pizza/index.php" method="POST">
-        <select id="lista">
-            <option value="teste">teste</option>
-        </select>
+    
         <div class="categoria-principal">
             <label for="">CATEGORIA PRINCIPAL</label>
             <input type="text" placeholder="TRADICIONAL" name="0">
