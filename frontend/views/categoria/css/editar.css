@@ -29,6 +29,7 @@ form {
     flex-direction: column;
     width: 100vw;
     align-items: center;
+    z-index: 20;
 }
 
 #input-1 {
@@ -91,6 +92,10 @@ form {
     margin-bottom: 5px;
     padding-left: 3px;
     padding-right: 3px;
+}
+
+.button:hover{
+    cursor: pointer;
 }
 
 .btn-1 {
