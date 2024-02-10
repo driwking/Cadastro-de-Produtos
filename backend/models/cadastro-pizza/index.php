@@ -13,15 +13,11 @@ for($i = 0 ; $i < count($_POST); $i++){
                  
         }
 
-        // if(is_array($_POST[$i])){
-        //     for($j = 0; $j < array_count_values($_POST[$i]); $j++){
-        //         $campo[$i] = clear($_POST[$i][$j]);    
-        //     }
-        //     break;
-        // }
         if($i != 1 and $i != 2){
             $campo[$i] = clear($_POST[$i]);
         }
+
+        if()
     }
 }   
 

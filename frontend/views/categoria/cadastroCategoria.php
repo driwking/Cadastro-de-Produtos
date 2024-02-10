@@ -17,17 +17,28 @@
     <?php require_once $_SESSION['layouts'] . 'menu-topo.php' ?>
     <h1>CADASTRO DE CATEGORIA</h1>
     <form action="/backend/models/cadastro-pizza/index.php" method="POST">
-    
+
         <div class="categoria-principal">
             <label for="">CATEGORIA PRINCIPAL</label>
             <input type="text" placeholder="TRADICIONAL" name="0">
         </div>
         <div class="categoria-segundaria">
             <label for="">CATEGORIA SEGUNDARIA</label>
-            <input type="text" placeholder="SALGADA" name="1">
-            <input type="text" placeholder="DOCE" name="2">
-            <button>➕</button>
-            <button>➖</button>
+            <div class="sub-segundaria">
+                <input type="text" placeholder="SALGADA" name="1">
+                <!-- <input type="text" placeholder="DOCE" name="2"> -->
+                <button class="btn-segundario"><img src="/frontend/public/img//mais.png" alt=""></button>
+                <div class="detalhes-segundaria">
+                    <div class="detalhes-titles">
+                        <h3>TAMANHO DAS PIZZAS</h3>
+                        <h3>VALOR</h3>
+                    </div>
+                    <div class="detalhes-inputs">
+                        <input type="text" name="tamanho-1" placeholder="UNICO">
+                        <input type="text" name="tamanho-2" placeholder="R$">
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="div-tamanho">
             <label for="">TAMANHO DAS PIZZAS</label>

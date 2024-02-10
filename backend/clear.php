@@ -8,7 +8,6 @@ function clear($input)
     $html = htmlspecialchars($mysql);
     return $html;
 }
-
 function verificacao(String $nome)
 {
 
@@ -32,7 +31,7 @@ function create(String $nome_cat, array $nome_cat_segundaria)
     global $connect;
     
     $sql = "INSERT INTO categorias (nome) VALUES ('$nome_cat')";
-    $query = mysqli_query($connect, $sql);
+    $query_cat = mysqli_query($connect, $sql);
     
     $sql = "SELECT id_categorias FROM categorias WHERE nome = '$nome_cat'";
     $id = mysqli_query($connect, $sql);
@@ -44,7 +43,7 @@ function create(String $nome_cat, array $nome_cat_segundaria)
         $query = mysqli_query($connect, $sql_cat_segundaria);
     }
     
-    if ($query) {
+    if ($query and $query_cat) {
         return "cadastrado";
     } else {
         return "erro";
