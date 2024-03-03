@@ -3,7 +3,6 @@ session_start();
 require_once $_SESSION['crud'];
 
 // POST FORM  
-
 $id = $_POST['id'];
 $id_seq = $_POST['id_seq']
 
@@ -27,7 +26,7 @@ $id_seq = $_POST['id_seq']
     
     
     <?php require_once $_SESSION['layouts'] . 'menu-topo.php' ?>
-    <!-- <?php var_dump($_POST) ?> -->
+    <!-- <?php var_dump($_POST) ?> comment -->
     <h1>EDITAR CATEGORIA</h1>
     <form action="../categoria/edit.php" method="POST" class="form-dados">
         <h2>PRINCIPAL</h2>

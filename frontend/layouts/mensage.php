@@ -17,7 +17,7 @@
     <div>
         <div class="mensage-btn">
             <div class="div-btns">
-                <div onclick="send_mensage()" name="conf" type="submit" class="btn" placeholder="enviar" value="enviar">
+                <div onclick="teste()" name="conf" type="submit" class="btn" placeholder="enviar" value="enviar">
                     <p>enviar</p>
                 </div>
             </div>
@@ -29,6 +29,7 @@
         <h3 class="title-h3">
             Deseja confirma a atualização dos campos de categoria ?
         </h3>
+        <button onclick="teste()"></button>
         <button onclick="conf()" name="conf" type="submit" class="btn_conf" value="confirmar">confirmar</button>
         <div onclick="canc()" name="conf" class="btn_canc" value="confirmar">
             <p>cancelar</p>

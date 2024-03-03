@@ -27,7 +27,7 @@
             <div class="sub-segundaria">
                 <input type="text" placeholder="SALGADA" name="1">
                 <!-- <input type="text" placeholder="DOCE" name="2"> -->
-                <button class="btn-segundario"><img src="/frontend/public/img//mais.png" alt=""></button>
+                <div onclick="add_cart(add_id())" class="btn-segundario"><img src="/frontend/public/img//mais.png" alt=""></div>
                 <div class="detalhes-segundaria">
                     <div class="detalhes-titles">
                         <h3>TAMANHO DAS PIZZAS</h3>
@@ -37,6 +37,7 @@
                         <input type="text" name="tamanho-1" placeholder="UNICO">
                         <input type="text" name="tamanho-2" placeholder="R$">
                     </div>
+                    <div onclick="remove_cart(id())" class="btn-segundario"><img src="/frontend/public/img//mais.png" alt=""></div>
                 </div>
             </div>
         </div>
@@ -50,4 +51,5 @@
             <button class="button">cadastrar</button>
         </div>
     </form>
+    <script src="js/add_cart.js"></script>
 </body>

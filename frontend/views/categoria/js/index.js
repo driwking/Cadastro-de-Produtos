@@ -9,7 +9,7 @@ var contaienr_bots = document.querySelector(".contaienr-bot")
 var body = document.querySelector("body")
 
 function send_mensage() {
-    
+    console.log("clicked on button!")
     body.style.zIndex = "-1"
     contaienr_bots.style.display = "flex"
     btn_conf.style.display = "flex"
@@ -17,7 +17,6 @@ function send_mensage() {
     h3.style.display = "flex"
     div.className = ("mensage div-buttons")
     form.appendChild(contaienr_bots)
-
 }
 
 function canc() {
@@ -30,4 +29,9 @@ function canc() {
 
 function conf() {
     btn_conf.style.display = "none"
+}
+
+function teste(){
+
+    console.log("clicked on button!")
 }

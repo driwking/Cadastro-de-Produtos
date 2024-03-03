@@ -1,5 +1,5 @@
 <?php
-require_once "/xampp/htdocs/php/Cadastro-de-Produtos/backend/clear.php";
+require_once "/Users/andri/Documents/trabalhos/sistema_ERP_pizzaria_jacinthos/Cadastro-de-Produtos/backend/clear.php";
 
 $campo = [];
 
@@ -17,7 +17,6 @@ for($i = 0 ; $i < count($_POST); $i++){
             $campo[$i] = clear($_POST[$i]);
         }
 
-        if()
     }
 }   
 

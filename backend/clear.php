@@ -21,7 +21,7 @@ function verificacao(String $nome)
 function count_register()
 {
     global $connect;
-    $sql = "SELECT id_categorias FROM categorias";
+    $sql = "SELECT id_categoria FROM categorias";
     $query = mysqli_query($connect, $sql);
 
     return mysqli_num_rows($query);
@@ -33,13 +33,13 @@ function create(String $nome_cat, array $nome_cat_segundaria)
     $sql = "INSERT INTO categorias (nome) VALUES ('$nome_cat')";
     $query_cat = mysqli_query($connect, $sql);
     
-    $sql = "SELECT id_categorias FROM categorias WHERE nome = '$nome_cat'";
+    $sql = "SELECT id_categoria FROM categorias WHERE nome = '$nome_cat'";
     $id = mysqli_query($connect, $sql);
     $id = mysqli_fetch_array($id, MYSQLI_BOTH);
 
     $arr_values = count($nome_cat_segundaria);
     for($i = 1; $i <=  $arr_values; $i++ ){
-        $sql_cat_segundaria = "INSERT INTO categorias_segundarias (nome, id_categorias) VALUES ('$nome_cat_segundaria[$i]', $id[0])";
+        $sql_cat_segundaria = "INSERT INTO categorias_segundarias (nome, id_categoria) VALUES ('$nome_cat_segundaria[$i]', $id[0])";
         $query = mysqli_query($connect, $sql_cat_segundaria);
     }
     
@@ -75,13 +75,13 @@ function id(int $id)
     global $connect;
     $row = [];
     $list = [];
-    $sql = 'SELECT id_categorias FROM categorias';
+    $sql = 'SELECT id_categoria FROM categorias';
     $query = mysqli_query($connect, $sql);
     $k = 0;
     for ($j = 0; mysqli_num_rows($query) > $j; $j++) {
         $k++;
         $row = mysqli_fetch_array($query, MYSQLI_BOTH);
-        $list[$k] = $row['id_categorias'];
+        $list[$k] = $row['id_categoria'];
     }
     return $list[$id];
 }
@@ -89,7 +89,7 @@ function id(int $id)
 function names_complet($id){
 
     global $connect;
-    $sql = 'SELECT cat.nome, catSeg.nome FROM categorias_segundarias AS catSeg RIGHT JOIN categorias AS cat ON cat.id_categorias = catSeg.id_categorias WHERE cat.id_categorias ='.$id;
+    $sql = 'SELECT cat.nome, catSeg.nome FROM categorias_segundarias AS catSeg RIGHT JOIN categorias AS cat ON cat.id_categoria = catSeg.id_categoria WHERE cat.id_categoria ='.$id;
     $row = [];
     $query = mysqli_query($connect, $sql);
     $row = mysqli_fetch_array($query, MYSQLI_BOTH);
