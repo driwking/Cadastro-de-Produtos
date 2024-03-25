@@ -11,10 +11,12 @@
     <?php include_once $_SESSION['layouts-css'].'menu-topo.css' ?>
     <?php echo "</style>" ?>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/response.css">
 </head>
 
 <body>
     <?php require_once $_SESSION['layouts'].'menu-topo.php'?>
+    <?php require_once $_SESSION['layouts'].'menu-mobile.php'?>
     <h1>CONHEÇA SEUS PRODUTOS</h1>
     <div class="produtos-main">
         <ul >

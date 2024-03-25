@@ -68,5 +68,4 @@ $id_seq = $_POST['id_seq']
     </div>
     <script src="./js/index.js"></script>
     </body>
-
 </html>

@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 $tex = 0;
 $url = $_SERVER['REQUEST_URI'];
 $routes = array();
@@ -84,7 +82,7 @@ function route(string $req, string|null $dir = null, string|null $arq = null)
 }
 
 //categorias
-route('/', 'cadastro-produto', '');
+route('/', 'menu-principal', '');
 route('/categorias', 'categoria', '');
 route('/categorias/cadastro', 'categoria', 'cadastroCategoria.php');
 route('/categorias/editar/', 'categoria', 'editarCategoria.php');
@@ -116,7 +114,7 @@ foreach ($routes as $indice => $value) {
 }
 
 if($tex == count($routes)){
-   // header('location: index.html');
+   header('location: index.html');
 }
 
 ?>

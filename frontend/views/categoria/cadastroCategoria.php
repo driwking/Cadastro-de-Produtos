@@ -24,20 +24,21 @@
         </div>
         <div class="categoria-segundaria">
             <label for="">CATEGORIA SEGUNDARIA</label>
+            <div onclick="add_cart(add_id())" class="btn-segundario btn-add-cart"><img src="/frontend/public/img/mais.png" alt=""></div>
             <div class="sub-segundaria">
                 <input type="text" placeholder="SALGADA" name="1">
                 <!-- <input type="text" placeholder="DOCE" name="2"> -->
-                <div onclick="add_cart(add_id())" class="btn-segundario"><img src="/frontend/public/img//mais.png" alt=""></div>
                 <div class="detalhes-segundaria">
                     <div class="detalhes-titles">
                         <h3>TAMANHO DAS PIZZAS</h3>
                         <h3>VALOR</h3>
                     </div>
-                    <div class="detalhes-inputs">
-                        <input type="text" name="tamanho-1" placeholder="UNICO">
-                        <input type="text" name="tamanho-2" placeholder="R$">
+                    <div class="detalhes-inputs" id="div-line">
+                        <input type="text" name="tamanho-1" placeholder="UNICO" id="line-01">
+                        <input type="text" name="tamanho-2" placeholder="R$" id="line-02">
                     </div>
-                    <div onclick="remove_cart(id())" class="btn-segundario"><img src="/frontend/public/img//mais.png" alt=""></div>
+                    <div onclick="add_line()" class="btn-segundario"><img src="/frontend/public/img/mais.png" alt=""></div>
+                    <div onclick="remove_line()" class="btn-segundario"><img src="/frontend/public/img/menos.png" alt=""></div>
                 </div>
             </div>
         </div>
