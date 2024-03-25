@@ -1,4 +1,4 @@
-<header>
+<header id="menu-desktop">
     <div class="menu">
         <div class="logo-div">
             <a href="/">
