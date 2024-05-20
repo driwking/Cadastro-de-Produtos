@@ -1,7 +1,7 @@
 ##Guia das commits do projeto - entenda o que cada uma quer dizer 
 
 
-### :tw-1f34a:
+### :orange:
 	Updates pequenas em poucos arquivos
 
 ### :performing_arts:
@@ -12,7 +12,7 @@
     Remoções pequenas, pouca importancia 
 ### :skull:
     Remoção muito grande do projeto, paginas, features que eram importantes
-### :tw-2668:
+### :hotsprings:
      Adição de testes
 ### :mage:
 	Bugs corrigidos
