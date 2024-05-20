@@ -1,5 +1,5 @@
 <?php session_start() ?>
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang='pt-br'>
 
 <head>
@@ -24,9 +24,9 @@
         </div>
         <div class="categoria-segundaria">
             <label for="">CATEGORIA SEGUNDARIA</label>
-            <div onclick="add_cart(add_id())" class="btn-segundario btn-add-cart"><img src="/frontend/public/img/mais.png" alt=""></div>
-            <div class="sub-segundaria">
-                <input type="text" placeholder="SALGADA" name="1">
+            <div class="btn-segundario btn-add-cart"><img src="/frontend/public/img/mais.png" alt=""></div>
+            <div class="sub-segundaria" id="sub-seg">
+                <input type="text" placeholder="SALGADA" name="1" id="input_segundaria">
                 <!-- <input type="text" placeholder="DOCE" name="2"> -->
                 <div class="detalhes-segundaria">
                     <div class="detalhes-titles">
@@ -37,15 +37,9 @@
                         <input type="text" name="tamanho-1" placeholder="UNICO" id="line-01">
                         <input type="text" name="tamanho-2" placeholder="R$" id="line-02">
                     </div>
-                    <div onclick="add_line()" class="btn-segundario"><img src="/frontend/public/img/mais.png" alt=""></div>
-                    <div onclick="remove_line()" class="btn-segundario"><img src="/frontend/public/img/menos.png" alt=""></div>
+                    <div class="btn-segundario add_line"><img src="/frontend/public/img/mais.png" alt=""></div>
                 </div>
             </div>
-        </div>
-        <div class="div-tamanho">
-            <label for="">TAMANHO DAS PIZZAS</label>
-            <input type="text" placeholder="broto" name="3">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
         </div>
         <div class="form-button">
             <a class="button" href="/categorias">voltar</a>
