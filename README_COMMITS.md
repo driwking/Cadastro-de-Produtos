@@ -1,4 +1,4 @@
-##Guia das commits do projeto - entenda o que cada uma quer dizer 
+## Guia das commits do projeto - entenda o que cada uma quer dizer 
 
 
 ### :orange:
