@@ -1,19 +1,21 @@
-##Guia das commits do projeto - entenda o que cada uma quer dizer 
+## Guia das commits do projeto - entenda o que cada uma quer dizer 
 
 
-###:tw-1f34a:
+### :orange:
 	Updates pequenas em poucos arquivos
 ###:performing_arts:
+
+### :performing_arts:
 	Updates muito grande como alterações das funcionalidades seguidas de adição de features
-###:sparkles:
+### :sparkles:
     Nova features no projeto
-###:wastebasket:
+### :wastebasket:
     Remoções pequenas, pouca importancia 
-###:skull:
+### :skull:
     Remoção muito grande do projeto, paginas, features que eram importantes
-###:tw-2668:
+### :hotsprings:
      Adição de testes
-###:mage:
+### :mage:
 	Bugs corrigidos
-###:hammer_and_wrench
+### :hammer_and_wrench:
     Novas versões
