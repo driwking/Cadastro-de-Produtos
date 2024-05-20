@@ -3,7 +3,6 @@
 
 ###:tw-1f34a:
 	Updates pequenas em poucos arquivos
-
 ###:performing_arts:
 	Updates muito grande como alterações das funcionalidades seguidas de adição de features
 ###:sparkles:
