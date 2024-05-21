@@ -3,8 +3,6 @@
 
 ### :orange:
 	Updates pequenas em poucos arquivos
-###:performing_arts:
-
 ### :performing_arts:
 	Updates muito grande como alterações das funcionalidades seguidas de adição de features
 ### :sparkles:
