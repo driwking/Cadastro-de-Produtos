@@ -1,31 +1,5 @@
-<?php session_start() ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Vendas</title>
-    <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
-    <script src="javascript/index.js"></script>
-    <?php echo "<style>" ?>
-    <?php
-    include_once $_SESSION['layouts-css'] . 'menu-topo.css'
-    ?>
-    <?php
-    include_once $_SESSION['layouts-css'] . 'menu-lateral.css'
-    ?>
-    <?php echo "</style>" ?>
-    <link rel="stylesheet" href="./css/style.css">
-
-</head>
-
-<body>
-
-    <?php require_once $_SESSION['layouts'] . 'menu-topo.php' ?>
-
+<main>
     <section class="body-index-vendas">
-        <?php require_once $_SESSION['layouts'] . 'menu-lateral.php' ?>
         <section class="sec-conteudo">
 
             <h1>VENDAS</h1>
@@ -176,9 +150,4 @@
             </form>
         </section>
     </section>
-
-
-
-</body>
-
-</html>
+</main>

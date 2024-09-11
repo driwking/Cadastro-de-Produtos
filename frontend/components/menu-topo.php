@@ -1,7 +1,7 @@
 <header id="menu-desktop">
     <div class="menu">
-        <div class="logo-div">
-            <a href="/">
+        <div class="logovdiv">
+            <a href="<?= PATH_S  ?>">
                 <svg class="logo" width="100" height="60" viewBox="0 0 212 122" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_21_2)">
                         <path d="M60.5339 41.7846C59.6089 41.7846 58.8162 41.4479 58.1556 40.7745C57.4951 40.0655 57.1647 39.2149 57.1647 38.2225C57.1647 37.2301 57.4786 36.3972 58.1061 35.7238C58.7667 35.0504 59.5759 34.7136 60.5339 34.7136C61.4257 34.7136 62.1854 35.0504 62.813 35.7238C63.4406 36.3972 63.7543 37.2301 63.7543 38.2225C63.7543 39.2149 63.4406 40.0655 62.813 40.7745C62.1854 41.4479 61.4257 41.7846 60.5339 41.7846ZM55.282 75.4913V74.4279L58.7502 73.8963V49.5999L55.282 49.0682V48.0049H63.7048V73.8963L67.173 74.4279V75.4913H55.282Z" fill="#DC2C2C" />
@@ -31,10 +31,9 @@
             </a>
         </div>
         <ul class="menu-top">
-            <li><a href="/pizzas">Cardapio</a></li>
-            <li><a href="/">Cadastro produtos</a></li>
-            <li><a href="/Menuvendas">Controle de vendas</a></li>
-            <li><a href="">pensando</a></li>
+            <li><a href="<?= PATH_S . "pizzas" ?>">Cardapio</a></li>
+            <li><a href="<?= PATH_S . "categoria/cadastro" ?>">Cadastro produtos</a></li>
+            <li><a href="<?= PATH_S . "vendas/menu" ?>">Controle de vendas</a></li>
         </ul>
     </div>
 </header>

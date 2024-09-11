@@ -1,21 +1,4 @@
-<?php session_start() ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
-    <title>Editar pizza</title>
-    <style>
-        <?php include_once $_SESSION['layouts-css'] . 'menu-topo.css' ?>
-    </style>
-    <link rel="stylesheet" href="./css/index.css">
-</head>
-
-<body>
-    <?php require_once $_SESSION['layouts'] . 'menu-topo.php' ?>
-
+<main>
     <h1>EDITAR PIZZA</h1>
 
     <form action="">
@@ -56,6 +39,4 @@
     </form>
     <script src="./javascript/img.js"></script>
 
-</body>
-
-</html>
+</main>

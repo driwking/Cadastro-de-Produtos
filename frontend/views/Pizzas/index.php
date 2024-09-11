@@ -1,22 +1,4 @@
-<?php session_start() ?>
-<!DOCTYPE html>
-<html lang='pt-br'>
-
-<head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content="width=device-width, initial-scale=1.0">
-    <link rel='shortcut icon' href='/frontend/public/img/logo.png' type="image/x-icon">
-    <title>Pizzas</title>
-    <style>
-        <?php include_once $_SESSION['layouts-css'] . 'menu-topo.css' ?>
-    </style>
-    <link rel='stylesheet' href="./css/cardapio.css">
-</head>
-
-<body>
-
-    <?php require_once $_SESSION['layouts'] . 'menu-topo.php' ?>
-
+<main>
     <div class="banner">
         <img src="/frontend/public//img/Pizza_PNG_Transparente_Grande_Fatias_Sem_Fundo 2.png" alt="">
     </div>
@@ -139,6 +121,6 @@
                 </div>
 
         </section>
-</body>
+</main>
 
 </html>

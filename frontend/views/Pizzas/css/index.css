@@ -202,3 +202,178 @@ select {
     border: none;
     border-radius: 5px;
 }
+
+/* BANNER */
+
+.banner {
+    height: 417px;
+    width: 98vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    z-index: 0;
+}
+
+.banner img {
+
+    height: 100%;
+    opacity: 75%;
+
+}
+
+
+
+/* MENU */
+
+.bar-lateral-cardapio {
+
+    margin-left: 0 !important;
+    text-align: center;
+    margin-top: 0;
+    width: 23vw;
+    background-color: #992525;
+    color: #fff;
+}
+
+.bar-lateral-cardapio h1 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-bottom: 3.5px solid #fff;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.ul-1 {
+    margin-top: 75px;
+}
+
+
+.ul {
+    text-align: justify;
+}
+
+.ul-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 40px;
+}
+
+
+.ul li {
+    margin-left: 79px;
+}
+
+.ul li a {
+    font-size: 20px;
+    font-weight: 200;
+    color: #fff;
+}
+
+.ul li:nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.ul {
+    margin-bottom: 40px;
+}
+
+
+/*  section conteudo */
+
+.section-body {
+    margin-top: -417px;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.section-cardapio-conteudo {
+    display: flex;
+    width: 77vw;
+    margin-right: 0 !important;
+    flex-direction: column;
+}
+
+form {
+    z-index: 1000000;
+    margin-top: 25px;
+    align-self: center;
+}
+
+form input {
+    border-radius: 100px;
+    border: 1px solid rgb(158, 158, 158);
+    width: 374px;
+    height: 44px;
+    text-align: center;
+}
+
+.conteudo-cardapio {
+    z-index: 1000000;
+}
+
+.conteudo-cardapio h1 {
+    color: #C01919;
+    align-self: flex-start;
+    margin-top: 62px;
+    margin-left: 26px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.conteudo-cardapio h2 {
+    color: #C01919;
+    align-self: flex-start;
+    margin-top: 51px;
+    margin-left: 46px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/* PIZZAS */
+
+
+.div-pizzas {
+    padding: 30px 10px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.card {
+    margin-top: 30px;
+    margin-left: 17px;
+    text-align: center;
+    width: 286px;
+    height: 210px;
+}
+
+.card img {
+    opacity: 100;
+    width: 100px;
+    height: 100px;
+}
+
+.card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9D9D9;
+    height: 207px;
+    width: 100%;
+}
+
+.card:nth-child(1),
+.card:nth-child(2),
+.card:nth-child(3) {
+    margin-top: 30px;
+}

@@ -1,24 +1,4 @@
-<?php
-session_start();
-require_once $_SESSION['crud'];
-?>
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categorias</title>
-    <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
-    <style>
-        <?php include_once $_SESSION['layouts-css'] . 'menu-topo.css' ?>
-    </style>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-
-<body>
-    <?php require_once $_SESSION['layouts'] . 'menu-topo.php' ?>
-
+<main>
     <h1>MENU DE CATEGORIA</h1>
 
     <form id="form-search" action="/frontend/views/categoria/editarCategoria.php" method="POST">
@@ -55,6 +35,4 @@ require_once $_SESSION['crud'];
         <?php }; ?>
     </div>
     <p><span style="color:red">clique</span> para atualizar ou ver sub categorias</p>
-</body>
-
-</html>
+</main>

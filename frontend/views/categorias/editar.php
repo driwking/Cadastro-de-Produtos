@@ -1,32 +1,4 @@
-<?php
-session_start();
-require_once $_SESSION['crud'];
-
-// POST FORM  
-$id = $_POST['id'];
-$id_seq = $_POST['id_seq']
-
-?>
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
-    <link rel="shortcut icon" href="/frontend/public/img/logo.png" type="image/x-icon">
-    <title>Editar categoria</title>
-    <style>
-        <?php include_once $_SESSION['layouts-css'] . 'menu-topo.css' ?>
-        </style>
-    <link rel="stylesheet" href="./css/editar.css">
-    <link rel="stylesheet" href="./css/mensage.css">
-</head>
-
-<body>
-    
-    
-    <?php require_once $_SESSION['layouts'] . 'menu-topo.php' ?>
-    <!-- <?php var_dump($_POST) ?> comment -->
+<main>
     <h1>EDITAR CATEGORIA</h1>
     <form action="../categoria/edit.php" method="POST" class="form-dados">
         <h2>PRINCIPAL</h2>
@@ -49,7 +21,7 @@ $id_seq = $_POST['id_seq']
 
             <input type="text" name="nome_primario" placeholder="input-2" value="<?php echo names_complet($id)[0] ?>">
             <input type="text" name="nome_segundario" placeholder="input-3" value="<?php echo names_complet($id)[1] ?>">
-            <input type="text" name="nome_terciario" placeholder="input-4" >
+            <input type="text" name="nome_terciario" placeholder="input-4">
         </div>
         <div class="button btn-3">novo</div>
         <h3><span style="color:red">clique</span> para atualizar ou deletar</h3>
@@ -67,5 +39,4 @@ $id_seq = $_POST['id_seq']
         </div>
     </div>
     <script src="./js/index.js"></script>
-    </body>
-</html>
+</main>

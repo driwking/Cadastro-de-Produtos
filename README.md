@@ -1,3 +1,9 @@
+# Em desenvolvimento
+    [ ] configurar arquivo index para chamar as paginas de html e css   
+    [ ] tratar requisições para chamada do css e js
+    [ ] criar um import para importar todos os arquivos em stack, 
+
+
 # Cadastro-de-Produtos
 ### Projeto desenvolvido em php, html e css para cadastro de produtos de uma pizzaria com tela de login, cadastro para os produtos e visualização deles. 
 

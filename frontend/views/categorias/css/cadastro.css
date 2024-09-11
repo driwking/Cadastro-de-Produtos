@@ -98,12 +98,11 @@ form {
 
 
 .form-button {
-    z-index: -10;
+    z-index: 100;
     margin-top: 100px;
     align-items: flex-end !important;
     /* margin-top: 43px; */
-    height: 100%;
-    width: 100%;
+    width:  100%;
     display: flex;
     justify-content: space-between;
     padding: 0 34px;
@@ -111,6 +110,9 @@ form {
     bottom: 0;
 }
 
+.form-button > a, .form-button .button{
+    z-index: 500;
+}
 .button {
     border: none;
     border-radius: 5px;
@@ -130,7 +132,9 @@ form {
 .categoria-segundaria{
     margin-top: 94px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding-left: 109px;
     width: 100%;
     /* border: 0.5px solid; */
@@ -145,7 +149,7 @@ form {
 }
 .sub-segundaria{
     /* border: 0.5px solid; */
-    margin-left: 43px;
+    padding: 0 0 0 220px ;
 }
 
 .sub-segundaria input{
@@ -217,8 +221,8 @@ form {
 /* botao adicionar cart */
 .btn-segundario.btn-add-cart{
     position: absolute;
-    top: 90px;
-    left: 307px;
+    top: 0;
+    right: 0;
 }
 
 .remove_cart{
@@ -226,3 +230,12 @@ form {
     top: 12px;
     right: 10px;
 }
+
+
+.secao-segundaria{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

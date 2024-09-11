@@ -1,5 +1,5 @@
 <?php
-session_destroy();
+session_destroy(); 
 session_start();
  
 $path = '/Users/andri/Documents/trabalhos/sistema_ERP_pizzaria_jacinthos/Cadastro-de-Produtos/frontend/';
