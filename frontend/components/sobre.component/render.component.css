@@ -1,0 +1,23 @@
+.junte-se {background: #FECF34; padding: 77px 0 132px}
+.junte-se .titulo {font: 700 40px / 47px Montserrat; color: var(--branco); text-align: center;}
+
+.junte-se .inferior {display: flex; justify-content: space-between; margin: 0 53px 0 30px; align-items: flex-end;}
+.junte-se .inferior .left {flex: 0 0 530px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 0 0 0;}
+.junte-se .inferior .left .eggs {position: relative; z-index: 1; display: flex; justify-content: center; align-items: flex-end; margin: 0 0 55px;}
+.junte-se .inferior .left .eggs .egg-01 {width: 308px; height: 387px; background-color: #FFBE28; border-radius: 100%; transform: rotate(29deg); background: url('../../public/img/conteudo/home/stars.png') no-repeat center center; background-size: contain; background-color: #FFBE28;}
+.junte-se .inferior .left .eggs .egg-02 {width: 216px; height: 269px; background-color: #FFBE28; border-radius: 100%; transform: rotate(358deg); margin: 0 0 0 -158px; background: url('../../public/img/conteudo/home/background.png') no-repeat center center; background-size: cover;}
+.junte-se .inferior .left .eggs::before {content: ''; width: 261px; height: 83.86px; background-color: #B48721; border-radius: 100%; transform: rotate(347deg); position: absolute; bottom: -14px; z-index: -2; left: 122px; box-shadow: 0 0 5px 5px #B48721;}
+.junte-se .inferior .left .eggs::after {content: ''; width: 260px; height: 71.86px; background-color: #B48721; border-radius: 100%; transform: rotate(8deg); position: absolute; bottom: -18px; z-index: -2;right: 153px; box-shadow: 0 0 5px 5px #B48721;}
+.junte-se .inferior .left .img {display: block;}
+.junte-se .inferior .left .info {font: 500 32px / 38px Montserrat; color: #232323; text-align: left;}
+.junte-se .inferior .left .info > p {margin: 0 0 0 10px;}
+.junte-se .inferior .left .info .link {font: 800 29px / 38px Montserrat; color: var(--branco); text-align: left; border-radius: 15px; border: solid 3px var(--branco); display: block; width: 483px; padding: 11px 18px 9px 26px; margin: 35px 0 14px; display: flex; justify-content: space-between; align-items: center; transition: .4s;}
+.junte-se .inferior .left .info .link:hover{background-color: azure; color: #FFBE28; border: solid 3px var(--branco); cursor: pointer;}
+.junte-se .inferior .left .info .link .icone {height: 37px;}
+.junte-se .inferior .left .info .link:hover .icone path {fill: #FFBE28;}
+
+
+.junte-se .inferior .right {font: 500 32px / 38px Montserrat; color: #232323; text-align: right; width: 493px;}
+.junte-se .inferior .right .info {display: flex; flex-direction: column; align-items: flex-end;}
+.junte-se .inferior .right .img {width: 456px; height: 410px; border-radius: 100px; object-fit: contain; background-color: var(--branco); margin: 28px 0 0; place-content: center; place-items: center; display: grid;}
+.junte-se .inferior .right .img img {width: 300px; height: 316px; object-fit: contain;}

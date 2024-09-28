@@ -1,0 +1,40 @@
+<?php
+$menu = function($link, $text, $index = ''){
+    return [
+        'link' => "{$link}",
+        'text' => $text,
+        'index' => $index
+    ];
+};
+
+$links = [
+    $menu("","Home", "index"),
+    $menu("formulario","junte-se a nós", ""),
+    $menu("sobre","Sobre", ""),
+    $menu("contato","Contato", ""),
+]
+?>
+<header>
+    <div class="menu">
+        <div class="conteudo-1200">
+            <div class="conteudo row">
+                <div class="logo">
+                    <a href="<?= HOME ?>"><img src="<?= IMG . "logo/logo.png"?>" alt="<?= SEO::$Nome ?>" class="img"></a>
+                </div>
+                <ul class="links row">
+                    <?php
+                    foreach ($links as $link) {
+                    ?>
+                    <li class="li <?= $URL[0] == $link['link'] || $URL[0] == $link['index'] ? "select" : '' ?>">
+                        <a class="link" href="<?=HOME . "/" . $link['link'] ?? $link['index']  ?>">
+                            <p><?= $link['text'] ?></p>
+                        </a>
+                    </li>
+                    <?php
+                    }
+                    ?>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>

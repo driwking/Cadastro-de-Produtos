@@ -1,0 +1,21 @@
+<?php
+
+$path = IMG_S . "patrocinadores/";
+$files = glob($path ."*.{svg,png,jpg,jpeg,webp}",GLOB_BRACE);
+
+?>
+<section class="slide_patrocinadores">
+<div class="conteudo-1200">
+    <ul class="slider">
+        <?php
+        foreach ($files as $f) {
+        ?>
+        <li class="cliente">
+            <img src="<?= HOME ."/{$f}" ?>" alt="icones | <?= SEO::$Nome ?>" class="img">
+        </li>
+        <?php
+        }
+        ?>
+    </ul>
+</div>
+</section>

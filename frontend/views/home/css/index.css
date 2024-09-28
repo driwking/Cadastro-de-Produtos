@@ -1,62 +1,12 @@
-h1{
-    margin-top: 32.169px;
-    margin-left: 28px;
-    color: #9F0202;
-    max-width: 544px;
-    /* border: red 1px solid; */
-    margin-left: 28px;
-    font-size: 3em;
-    line-height: 70px;
-    word-wrap: break-word;
-}
-.produtos-main{
-    margin-top: -50px;
-    margin-left:-10px;
-    width: 100vw;
-    height: 60vh;
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+main {position: relative; z-index: 10;}
+.banner {background: url("../../../public/img/conteudo/home/banner.jpeg") center; background-size: cover; padding: 82px 0 179px; position: relative; z-index: -2;}
+.banner .filter {position: absolute; z-index: -1; top:0; left: 0; height: 100%; width: 100%; background-color: #00000061;}
+.banner .conteudo {position: relative; z-index: 2;}
+.banner .titulo-pd {font: 46px / 47px "ralewayblack"; color: #eeb531; width: 600px;}
+.banner .titulo-pd span{color: #ffffff;}
+.banner .texto {font: 500 25px / 35px Montserrat; color: #ffffff; width: 600px; margin: 20px 0 0;}
 
-.produtos-main {
-    color: #9F0202;
-    font-size: 2.5em;
-    padding: 28px;
-}
-.li-list{
-    margin-top:18px ;
-    margin-left: 8px;
-    border-left:8px solid #9F0202;
-    border-bottom: 8px solid #9F0202;
-}
-.produtos-main a{
-    margin-left: 10px;
-    margin-bottom: 10px;
-    color: #9F0202;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.card-img{
-    width: 640px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #c5c5c58f;
-    box-shadow: 0 0 40px #b9b9b9 ;
-    border-radius: 100%;
-    margin-top: 10px;
-    padding-left: 30px;
-    margin-right: 50px;
-    z-index: -100;
-}
-
-
-.produtos-main img{
-    /* width: 100%; */
-    /* box-shadow: 0 0 20px rgb(15, 15, 15); */
-    z-index: 12;
-    border-radius: 100%;
-}
+.banner .btn {margin: 20px 0 0; display: inline-block;}
+.banner .btn .link {padding: 15px; background-color: #eeb531; display: inline-block; border-radius: 3px;  transition: .5s;}
+.banner .btn:hover .link {background-color: #ffb504; transform: scale(1.1); cursor: pointer;}
+.banner .btn .link {font: 700 20px / 20px Montserrat; color: #fff;}

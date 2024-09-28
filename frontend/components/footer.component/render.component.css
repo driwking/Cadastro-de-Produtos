@@ -1,0 +1,23 @@
+.footer .top {background-color: #222121;}
+.footer .top .conteudo {padding: 39px 22px 22px; display: flex;}
+.footer .top .img {flex: 0 0  94px; height: 79px; border-radius: 12px; background:#1C1A1A; place-content: center; place-items: center; display: grid; margin: 0 38px 0 0;}
+.footer .top .img img {width: 74px; object-fit: contain;}
+.footer .top .titulo {font: 700 36px / 43px Montserrat; color: var(--branco); margin: 0 24px 0 0;}
+.footer .top .input {display: flex; justify-content: center; align-items: center; gap: 10px;}
+.footer .top .input .label {position: relative; display: flex; justify-content: center; align-items: center;}
+.footer .top .input .label .email {padding: 12px 12px 12px 57px; width: 381px; height: 46px; justify-content: center; text-align: left; border: 3px solid #F2E988; border-radius: 15px; background: #FECF34; color: var(--branco); font: 700 18px / 20px  Montserrat;}
+.footer .top .input .label .email:active, .footer .top .input .label .email:focus-visible,
+.footer .top .input .label .email:focus, .footer .top .input .label .email:target {border: none; outline: 3px solid #FFFFFF;}
+.footer .top .input .label .email::placeholder {color: var(--branco); font: 700 18px / 20px  Montserrat;}
+.footer .top .input .label .icone {position: absolute; left: 10px; width: 39px;}
+.footer .top .input .send {border: none; border-radius: 10px; padding: 16px 16.8px; font: 800 16px / 18px Montserrat; color: #3C3A34; background-color: var(--branco); transition: .3s;}
+.footer .top .input .send:hover {cursor: pointer; background-color: #3C3A34; color: var(--branco);}
+
+.footer .copy {background-color: #292828; padding: 9px 0; border-bottom: 2px solid #FECF34;}
+.footer .copy .conteudo {display: flex; justify-content: center; text-align: center; gap: 20px 72px;}
+.footer .copy .left .cp {font: 500 12px / 18px Montserrat; color: var(--branco);}
+.footer .copy .right .cp {font: 500 12px / 18px Montserrat; color: var(--branco);}
+.footer .copy .right .cp .Driw {position: relative;}
+.footer .copy .right .cp .Driw p {font: 500 12px / 18px Montserrat; color: var(--branco); display: inline;}
+.footer .copy .right .cp .Driw::after {content: ''; position: absolute; bottom: -2px; left: 0; height: 1px; width: 100%; background-color: var(--branco); width: 0; transition: .3s;}
+.footer .copy .right .cp .Driw:hover::after {width: 100%;}

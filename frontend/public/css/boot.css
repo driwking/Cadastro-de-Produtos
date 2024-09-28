@@ -1,0 +1,15 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    letter-spacing: 1.2px;
+}
+:root{
+    --branco: #FFFFFF;
+}
+
+.row {display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start;}
+.conteudo-1200 {width: 1200px; max-width: 91%; margin: 0 auto; }
+h1,h2,h3,h4,h5,h6 { font: inherit; width: inherit; line-height: inherit;}
